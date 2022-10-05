@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the dot product of two 3D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 3")]
-    [UnitTitle("Dot Product")]
-    public sealed class Vector3DotProduct : DotProduct<UnityEngine.Vector3>
-    {
-        public override float Operation(UnityEngine.Vector3 a, UnityEngine.Vector3 b)
-        {
-            return UnityEngine.Vector3.Dot(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5649ca08d777cf6da703bbb0186e00333c263130a7728c35768b17dad47d3d4b
+size 435

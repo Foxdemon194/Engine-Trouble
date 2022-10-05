@@ -1,4 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public delegate void Action<T1, T2, T3, T4, T5>(T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e798c9feb7739262e1322e9fc9b952b4936c95ba607f9c1582419f4efea2950
+size 134

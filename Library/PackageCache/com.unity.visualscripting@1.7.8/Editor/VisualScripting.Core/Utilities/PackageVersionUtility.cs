@@ -1,35 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using UnityEditor;
-
-namespace Unity.VisualScripting
-{
-    public static class PackageVersionUtility
-    {
-        private static SemanticVersion _version;
-
-        public static SemanticVersion version
-        {
-            get
-            {
-                if (_version.IsUnset())
-                {
-                    var myPackage = UnityEditor.PackageManager.PackageInfo.FindForAssetPath("Packages/com.unity.visualscripting");
-                    if (myPackage == null)
-                        throw new Exception("Error! Visual Scripting: couldn't find visual scripting package");
-
-                    var couldParse = SemanticVersion.TryParse(myPackage.version, out var parsedVersion);
-                    if (!couldParse)
-                        throw new Exception("Error! Visual Scripting: couldn't parse package version");
-
-                    _version = parsedVersion;
-                }
-
-                return _version;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:40a9f7fa5b218a33676e5b27742ad0429057fce554fa0bc6703930428f700a07
+size 1073

@@ -1,17 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public interface IGraphData
-    {
-        bool TryGetElementData(IGraphElementWithData element, out IGraphElementData data);
-
-        bool TryGetChildGraphData(IGraphParentElement element, out IGraphData data);
-
-        IGraphElementData CreateElementData(IGraphElementWithData element);
-
-        void FreeElementData(IGraphElementWithData element);
-
-        IGraphData CreateChildGraphData(IGraphParentElement element);
-
-        void FreeChildGraphData(IGraphParentElement element);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a23be7b96752999acb00bba1f9d34428b9943e400ff30f1e39abe8233334371
+size 530

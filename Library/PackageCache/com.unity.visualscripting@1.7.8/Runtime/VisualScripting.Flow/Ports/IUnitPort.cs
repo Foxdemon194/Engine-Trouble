@@ -1,26 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public interface IUnitPort : IGraphItem
-    {
-        IUnit unit { get; set; }
-        string key { get; }
-
-        IEnumerable<IUnitRelation> relations { get; }
-
-        IEnumerable<IUnitConnection> validConnections { get; }
-        IEnumerable<InvalidConnection> invalidConnections { get; }
-        IEnumerable<IUnitConnection> connections { get; }
-        IEnumerable<IUnitPort> connectedPorts { get; }
-        bool hasAnyConnection { get; }
-        bool hasValidConnection { get; }
-        bool hasInvalidConnection { get; }
-        bool CanInvalidlyConnectTo(IUnitPort port);
-        bool CanValidlyConnectTo(IUnitPort port);
-        void InvalidlyConnectTo(IUnitPort port);
-        void ValidlyConnectTo(IUnitPort port);
-        void Disconnect();
-        IUnitPort CompatiblePort(IUnit unit);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8aca27bbe39622afc8c81411f025ce6af2058692853c40e863a83c10439833c3
+size 881

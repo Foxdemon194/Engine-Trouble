@@ -1,18 +1,3 @@
-using System.ComponentModel;
-using UnityEngine;
-using UnityEngine.Timeline;
-
-namespace Timeline.Samples
-{
-    // Uses the USS style defined in `Editor/Stylesheets/Extensions/common.uss`.
-    // See `ReadMe-USS-Styles.md` for more details.
-    [CustomStyle("AnnotationStyle")]
-    [DisplayName("Annotation")]
-    public class AnnotationMarker : Marker // Represents the serialized data for a marker.
-    {
-        public string title;
-        public Color color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
-        public bool showLineOverlay = true;
-        [TextArea(10, 15)] public string description;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa796bc4a6d6c28c9cd1a0f3de7ed82f618124c8772c1964902bf26b8e4a0844
+size 604

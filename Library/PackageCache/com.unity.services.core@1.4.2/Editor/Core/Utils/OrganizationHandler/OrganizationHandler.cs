@@ -1,35 +1,3 @@
-using System;
-using UnityEditor;
-using System.Reflection;
-using UnityEngine;
-
-namespace Unity.Services.Core.Editor.OrganizationHandler
-{
-    class OrganizationHandler : IOrganizationHandler
-    {
-        public string Key
-        {
-            get
-            {
-#if ENABLE_EDITOR_GAME_SERVICES
-                return CloudProjectSettings.organizationKey;
-#else
-                return GetFallbackOrgKey();
-#endif
-            }
-        }
-
-        internal string GetFallbackOrgKey()
-        {
-            Type typeConnect = typeof(CloudProjectSettings).Assembly.GetType("UnityEditor.Connect.UnityConnect");
-            var connectInstance = typeConnect.GetRuntimeProperty("instance").GetValue(null);
-            var getOrganizationForeignKey = typeConnect.GetMethod("GetOrganizationForeignKey");
-            string orgKey = "";
-            if (getOrganizationForeignKey != null)
-            {
-                orgKey = (string)getOrganizationForeignKey.Invoke(connectInstance, new object[] {});
-            }
-            return orgKey;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d9a8c2a8a542b6d4e3e4a4438c223baf0566bd88accf2e9e1cddcbec396c6c4
+size 1051

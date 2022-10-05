@@ -1,17 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Changelog_1_0_0 : PluginChangelog
-    {
-        public Changelog_1_0_0(Plugin plugin) : base(plugin) { }
-
-        public override string description => "Initial Release";
-        public override SemanticVersion version => "1.0.0";
-        public override DateTime date => new DateTime(2017, 07, 26);
-        public override IEnumerable<string> changes => Enumerable.Empty<string>();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:764139fb5f598d03950f2c68faab21a5fec3ae32e9a31d81d02ddc577f18141b
+size 538

@@ -1,20 +1,3 @@
-using System.CodeDom;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public abstract class AotStubWriter
-    {
-        protected AotStubWriter(object stub)
-        {
-            this.stub = stub;
-        }
-
-        public object stub { get; }
-
-        public virtual bool skip => false;
-        public abstract string stubMethodComment { get; }
-        public abstract string stubMethodName { get; }
-        public abstract IEnumerable<CodeStatement> GetStubStatements();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d18bd68060f5259392a0cf1bb5d44e715ac0fa91b27c85ece2d2622765ebec8
+size 506

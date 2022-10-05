@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false, Inherited = true)]
-    public sealed class InspectableIfAttribute : Attribute, IInspectableAttribute
-    {
-        public InspectableIfAttribute(string conditionMember)
-        {
-            this.conditionMember = conditionMember;
-        }
-
-        public int order { get; set; }
-
-        public string conditionMember { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7f9d42083bf953005550862b2d936d8b805b9718ce8bb209dc787a0f996d76de
+size 532

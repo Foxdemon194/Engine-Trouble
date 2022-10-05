@@ -1,10 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public class ConnectionCollection<TConnection, TSource, TDestination> : ConnectionCollectionBase<TConnection, TSource, TDestination, List<TConnection>>
-        where TConnection : IConnection<TSource, TDestination>
-    {
-        public ConnectionCollection() : base(new List<TConnection>()) { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b92419e054bed6c09ac81c54463daa5536f0e11ec7cb67f4bd824d50cb230ec
+size 376

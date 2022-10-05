@@ -1,27 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.Services.Core.Device
-{
-    class UnityAnalyticsIdentifier : IUserIdentifierProvider
-    {
-        const string k_PlayerUserIdKey = "unity.cloud_userid";
-
-        public string UserId
-        {
-            get => PlayerPrefs.GetString(k_PlayerUserIdKey);
-            set
-            {
-                try
-                {
-                    PlayerPrefs.SetString(k_PlayerUserIdKey, value);
-                    PlayerPrefs.Save();
-                }
-                catch (Exception)
-                {
-                    // ignored
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:162bd2223eed3acced6d656777f156e7c7ab73736d88ffb184e6ada36aaffdec
+size 632

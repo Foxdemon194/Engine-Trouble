@@ -1,29 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Inspector(typeof(Color))]
-    public class ColorInspector : Inspector
-    {
-        public ColorInspector(Metadata metadata) : base(metadata) { }
-
-        protected override float GetHeight(float width, GUIContent label)
-        {
-            return EditorGUIUtility.singleLineHeight;
-        }
-
-        protected override void OnGUI(Rect position, GUIContent label)
-        {
-            position = BeginLabeledBlock(metadata, position, label);
-
-            var newValue = EditorGUI.ColorField(position, (Color)metadata.value);
-
-            if (EndBlock(metadata))
-            {
-                metadata.RecordUndo();
-                metadata.value = newValue;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec555ce7acea725ea22afbf35c9551a842afc8ff13c52c9dfcf99e8df87f1c8f
+size 772

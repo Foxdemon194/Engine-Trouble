@@ -1,33 +1,3 @@
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(SubgraphUnit))]
-    public class SuperUnitDescriptor : NesterUnitDescriptor<SubgraphUnit>
-    {
-        public SuperUnitDescriptor(SubgraphUnit unit) : base(unit) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            if (unit.graph == null)
-            {
-                return;
-            }
-
-            var definition = unit.nest.graph.validPortDefinitions.SingleOrDefault(d => d.key == port.key);
-
-            if (definition != null)
-            {
-                description.label = definition.Label();
-                description.summary = definition.summary;
-
-                if (definition.hideLabel)
-                {
-                    description.showLabel = false;
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:999c992721429c3aa047da3d70e11054251213c7e5d0a9ea7193eeda2e9184dc
+size 921

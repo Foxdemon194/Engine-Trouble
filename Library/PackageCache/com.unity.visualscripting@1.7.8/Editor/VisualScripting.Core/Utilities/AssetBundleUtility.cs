@@ -1,14 +1,3 @@
-using System.Linq;
-using UnityEngine;
-using UnityObject = UnityEngine.Object;
-
-namespace Unity.VisualScripting
-{
-    public static class AssetBundleUtility
-    {
-        public static bool IsLoaded(this AssetBundle bundle)
-        {
-            return AssetBundle.GetAllLoadedAssetBundles().Any(b => b == bundle);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84a30a4fdda5b1d360ff3a0084472d4e7b4926a33d6737c3c2b957e69dfc6531
+size 332

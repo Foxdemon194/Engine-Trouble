@@ -1,13 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public enum NodeColor
-    {
-        Gray = 0,
-        Blue = 1,
-        Teal = 2,
-        Green = 3,
-        Yellow = 4,
-        Orange = 5,
-        Red = 6
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:455092ee6287cdc67cdde2831c52d45edbd23a68a227f4cb57eade364225a108
+size 203

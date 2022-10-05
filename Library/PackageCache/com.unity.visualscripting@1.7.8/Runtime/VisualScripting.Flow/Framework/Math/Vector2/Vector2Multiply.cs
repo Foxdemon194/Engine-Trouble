@@ -1,23 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the component-wise product of two 2D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 2")]
-    [UnitTitle("Multiply")]
-    public sealed class Vector2Multiply : Multiply<Vector2>
-    {
-        protected override Vector2 defaultB => Vector2.zero;
-
-        public override Vector2 Operation(Vector2 a, Vector2 b)
-        {
-            return new Vector2
-            (
-                a.x * b.x,
-                a.y * b.y
-            );
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:976a328f40e6d23619e99d7cab751b54191e3fe6bb695072e2193bda5efc9c20
+size 550

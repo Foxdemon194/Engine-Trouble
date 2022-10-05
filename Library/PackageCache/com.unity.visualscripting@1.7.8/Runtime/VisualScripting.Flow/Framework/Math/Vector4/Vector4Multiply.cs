@@ -1,25 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the component-wise product of two 4D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 4")]
-    [UnitTitle("Multiply")]
-    public sealed class Vector4Multiply : Multiply<Vector4>
-    {
-        protected override Vector4 defaultB => Vector4.zero;
-
-        public override Vector4 Operation(Vector4 a, Vector4 b)
-        {
-            return new Vector4
-            (
-                a.x * b.x,
-                a.y * b.y,
-                a.z * b.z,
-                a.w * b.w
-            );
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d1b95abd9a58ef7d5c9ae92a21b6745cb99dc369d876bfa59e7c2c9325f1e1c
+size 604

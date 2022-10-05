@@ -1,24 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public interface IDescription
-    {
-        string title { get; }
-        string summary { get; }
-        EditorTexture icon { get; }
-    }
-
-    public static class XDescription
-    {
-        public static GUIContent ToGUIContent(this IDescription description)
-        {
-            return new GUIContent(description.title, null, description.summary);
-        }
-
-        public static GUIContent ToGUIContent(this IDescription description, int iconSize)
-        {
-            return new GUIContent(description.title, description.icon?[iconSize], description.summary);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ab523972aba3e5ade6c7b670c2a65ad194dcfb92b8f2a7abf544487a8484699
+size 644

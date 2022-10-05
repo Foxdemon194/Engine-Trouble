@@ -1,27 +1,3 @@
-BaseFieldMouseDragger
-UnityEditor
-UIElements
-FieldMouseDragger<>
-BaseCompositeField<,,>
-BasePopupField<,>
-BoundsField
-BoundsIntField
-RectField
-RectIntField
-Vector2Field
-Vector3Field
-Vector4Field
-Vector2IntField
-Vector3IntField
-DoubleField
-EnumField
-FloatField
-Hash128Field
-IntegerField
-LongField
-PopupField<>
-ProgressBar
-DeltaSpeed
-IValueField<>
-TextValueField<>
-TextValueFieldTraits<,>
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c98851351cff9e36ff96839ce6f96717e28fb4b1ea09a9dd930d2f28243a0eb
+size 387

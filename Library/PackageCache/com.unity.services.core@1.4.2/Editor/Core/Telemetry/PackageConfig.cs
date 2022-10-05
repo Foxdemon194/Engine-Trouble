@@ -1,20 +1,3 @@
-using System;
-using UnityEditor.PackageManager;
-using CanBeNull = JetBrains.Annotations.CanBeNullAttribute;
-
-namespace Unity.Services.Core.Editor
-{
-    [Serializable]
-    struct PackageConfig
-    {
-        public string Name;
-
-        public string Version;
-
-        public PackageConfig([CanBeNull] PackageInfo packageInfo)
-        {
-            Name = packageInfo?.name;
-            Version = packageInfo?.version;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:926b317b53a632829412af95de18be356ad06a715403a0ff4b9c58622d7ddd90
+size 435

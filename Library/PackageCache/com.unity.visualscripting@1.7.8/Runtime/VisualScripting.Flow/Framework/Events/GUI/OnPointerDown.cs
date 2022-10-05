@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the pointer presses the GUI element.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [UnitOrder(12)]
-    public sealed class OnPointerDown : PointerEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnPointerDownMessageListener);
-        protected override string hookName => EventHooks.OnPointerDown;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ddcc8f12aa106abfa0088d7ebdf794c70c2033145e31c9e7756ff009d169ceaf
+size 434

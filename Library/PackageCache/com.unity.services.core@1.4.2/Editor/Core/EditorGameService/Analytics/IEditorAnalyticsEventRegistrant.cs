@@ -1,17 +1,3 @@
-using System.Threading.Tasks;
-using UnityEngine.Analytics;
-
-namespace Unity.Services.Core.Editor
-{
-    interface IEditorAnalyticsEventRegistrant
-    {
-        /// <summary>
-        /// Meant to register EditorAnalytics event using this method:
-        /// EditorAnalytics.RegisterEventWithLimit
-        /// Expected to be handled asynchronously because it will fail if called before
-        /// EditorAnalytics are enabled, which they should be at Editor Start but can be disabled in Unity Pro
-        /// </summary>
-        /// <returns>AnalyticsResult</returns>
-        Task<AnalyticsResult> RegisterEditorAnalyticsEventAsync();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:70ae8aedd98bda8a5297c61430b1d3426e861a3e076a7ad003b397c3df6da045
+size 639

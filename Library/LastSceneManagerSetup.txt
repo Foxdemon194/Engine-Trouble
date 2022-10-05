@@ -1,5 +1,3 @@
-sceneSetups:
-- path: Assets/Scenes/MainMenu.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
+version https://git-lfs.github.com/spec/v1
+oid sha256:68f5d1b9a562aa26a6a3c7daae98ddf08d2998351c7d44a5098b34570e4ecdac
+size 95

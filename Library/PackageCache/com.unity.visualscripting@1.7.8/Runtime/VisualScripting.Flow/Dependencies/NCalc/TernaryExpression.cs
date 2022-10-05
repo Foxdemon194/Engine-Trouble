@@ -1,23 +1,3 @@
-namespace Unity.VisualScripting.Dependencies.NCalc
-{
-    public class TernaryExpression : LogicalExpression
-    {
-        public TernaryExpression(LogicalExpression leftExpression, LogicalExpression middleExpression, LogicalExpression rightExpression)
-        {
-            LeftExpression = leftExpression;
-            MiddleExpression = middleExpression;
-            RightExpression = rightExpression;
-        }
-
-        public LogicalExpression LeftExpression { get; set; }
-
-        public LogicalExpression MiddleExpression { get; set; }
-
-        public LogicalExpression RightExpression { get; set; }
-
-        public override void Accept(LogicalExpressionVisitor visitor)
-        {
-            visitor.Visit(this);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aac75fe4168f7b4325b89e34776e57dbcc023ed55d823839e3243397f42c22ef
+size 737

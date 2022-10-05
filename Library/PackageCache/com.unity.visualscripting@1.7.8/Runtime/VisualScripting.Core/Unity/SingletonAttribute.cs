@@ -1,19 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]
-    public sealed class SingletonAttribute : Attribute
-    {
-        public SingletonAttribute()
-        {
-            HideFlags = HideFlags.None;
-        }
-
-        public bool Persistent { get; set; }
-        public bool Automatic { get; set; }
-        public HideFlags HideFlags { get; set; }
-        public string Name { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:742747fdc1ed6faac5b4f9a9b12b277c7ca3a58532652a0d4385af8550beed35
+size 499

@@ -1,17 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqGraphsChangelog_1_0_0 : PluginChangelog
-    {
-        public LudiqGraphsChangelog_1_0_0(Plugin plugin) : base(plugin) { }
-
-        public override string description => "Initial Release";
-        public override SemanticVersion version => "1.0.0";
-        public override DateTime date => new DateTime(2017, 07, 26);
-        public override IEnumerable<string> changes => Enumerable.Empty<string>();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dec5abde3b72c2c584016915963da94e3f3f83bf5291032e55b527c48b5e86ae
+size 560

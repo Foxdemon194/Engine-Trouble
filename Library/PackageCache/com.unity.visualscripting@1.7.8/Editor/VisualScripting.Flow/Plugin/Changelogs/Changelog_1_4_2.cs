@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltFlow.ID)]
-    internal class Changelog_1_4_2 : PluginChangelog
-    {
-        public Changelog_1_4_2(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.2";
-
-        public override DateTime date => new DateTime(2019, 04, 03);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Fixed custom unit types defined in assembly definition files not being included in unit options";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6bab0ed2078db6d3fd8de7604d73cb9e86a5f3cfc948a2aa4cfcedac2cd88f64
+size 625

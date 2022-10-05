@@ -1,22 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    class DisabledMetrics : IMetrics
-    {
-        void IMetrics.SendGaugeMetric(string name, double value, IDictionary<string, string> tags)
-        {
-            // Do nothing since it's disabled.
-        }
-
-        void IMetrics.SendHistogramMetric(string name, double time, IDictionary<string, string> tags)
-        {
-            // Do nothing since it's disabled.
-        }
-
-        void IMetrics.SendSumMetric(string name, double value, IDictionary<string, string> tags)
-        {
-            // Do nothing since it's disabled.
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:28a98b07f010ebcafa2fe4e337347cd0f46eba0c25e85d2d93e8ddc0a0cc832b
+size 638

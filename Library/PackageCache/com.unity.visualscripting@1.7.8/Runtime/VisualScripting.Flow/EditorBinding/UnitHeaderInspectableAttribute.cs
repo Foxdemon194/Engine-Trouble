@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class UnitHeaderInspectableAttribute : Attribute
-    {
-        public UnitHeaderInspectableAttribute() { }
-
-        public UnitHeaderInspectableAttribute(string label)
-        {
-            this.label = label;
-        }
-
-        public string label { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f57b0c040bfa19c7999aabd88596680dc2c11c230367fbec29f9f9da8199b1fe
+size 447

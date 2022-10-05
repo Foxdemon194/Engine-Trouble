@@ -1,34 +1,3 @@
-using System;
-using Unity.VisualScripting.FullSerializer;
-
-namespace Unity.VisualScripting
-{
-    public class UnitCategoryConverter : fsDirectConverter
-    {
-        public override Type ModelType => typeof(UnitCategory);
-
-        public override object CreateInstance(fsData data, Type storageType)
-        {
-            return new object();
-        }
-
-        public override fsResult TrySerialize(object instance, out fsData serialized, Type storageType)
-        {
-            serialized = new fsData(((UnitCategory)instance).fullName);
-
-            return fsResult.Success;
-        }
-
-        public override fsResult TryDeserialize(fsData data, ref object instance, Type storageType)
-        {
-            if (!data.IsString)
-            {
-                return fsResult.Fail("Expected string in " + data);
-            }
-
-            instance = new UnitCategory(data.AsString);
-
-            return fsResult.Success;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:acde2369672db1ee57b19784fe664b43edeabd0fe803921dd2e7817864c27b78
+size 940

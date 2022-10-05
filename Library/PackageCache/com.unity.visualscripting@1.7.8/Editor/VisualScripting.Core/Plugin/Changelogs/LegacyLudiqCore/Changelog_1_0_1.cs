@@ -1,24 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqCoreChangelog_1_0_1 : PluginChangelog
-    {
-        public LudiqCoreChangelog_1_0_1(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.0.1";
-        public override DateTime date => new DateTime(2017, 08, 02);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Missing game object constructors";
-                yield return "[Fixed] Error when converting unitialized Unity object to string";
-                yield return "[Fixed] Check icon for pro skin";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:32a74a26d1b363d74f1d083165eeb743a84041d80aaaf3c83665f1ead27b7a1b
+size 740

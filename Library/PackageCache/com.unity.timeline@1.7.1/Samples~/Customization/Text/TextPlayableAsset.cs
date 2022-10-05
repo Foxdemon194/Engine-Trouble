@@ -1,33 +1,3 @@
-#if TEXT_TRACK_REQUIRES_TEXTMESH_PRO
-
-using System;
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-namespace Timeline.Samples
-{
-    // Represents the serialized data for a clip on the TextTrack
-    [Serializable]
-    public class TextPlayableAsset : PlayableAsset, ITimelineClipAsset
-    {
-        [NoFoldOut]
-        [NotKeyable] // NotKeyable used to prevent Timeline from making fields available for animation.
-        public TextPlayableBehaviour template = new TextPlayableBehaviour();
-
-        // Implementation of ITimelineClipAsset. This specifies the capabilities of this timeline clip inside the editor.
-        public ClipCaps clipCaps
-        {
-            get { return ClipCaps.Blending; }
-        }
-
-        // Creates the playable that represents the instance of this clip.
-        public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
-        {
-            // Using a template will clone the serialized values
-            return ScriptPlayable<TextPlayableBehaviour>.Create(graph, template);
-        }
-    }
-}
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:87168742bdb15cc04d60d5356f438c9ea2e7ea7ba18e436b97dd2e1676ea227c
+size 1089

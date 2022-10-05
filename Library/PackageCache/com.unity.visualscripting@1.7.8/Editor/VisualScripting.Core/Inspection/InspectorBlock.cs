@@ -1,16 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public struct InspectorBlock
-    {
-        public InspectorBlock(Metadata metadata, Rect position)
-        {
-            this.metadata = metadata;
-            this.position = position;
-        }
-
-        public Metadata metadata { get; private set; }
-        public Rect position { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e855af22d25a819d96c27bc318e5c8a06265e9d6d5a83f116856f225aeca420e
+size 368

@@ -1,28 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(IsVariableDefined))]
-    public class IsVariableDefinedOption : UnifiedVariableUnitOption<IsVariableDefined>
-    {
-        [Obsolete(Serialization.ConstructorWarning)]
-        public IsVariableDefinedOption() : base() { }
-
-        public IsVariableDefinedOption(VariableKind kind, string defaultName = null) : base(kind, defaultName) { }
-
-        protected override string NamedLabel(bool human)
-        {
-            return $"{kind} Has {name} Variable";
-        }
-
-        protected override string UnnamedLabel(bool human)
-        {
-            return $"{kind} Has Variable";
-        }
-
-        public override string SearchResultLabel(string query)
-        {
-            return SearchUtility.HighlightQuery(haystack, query);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0746cfc3d9382f9b36058597f5dba9b9b2c2ed0ae8a4d8062f9a3d232172cd48
+size 820

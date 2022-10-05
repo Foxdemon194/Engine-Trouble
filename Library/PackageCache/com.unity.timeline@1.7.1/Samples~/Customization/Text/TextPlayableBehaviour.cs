@@ -1,25 +1,3 @@
-#if TEXT_TRACK_REQUIRES_TEXTMESH_PRO
-
-using System;
-using UnityEngine;
-using UnityEngine.Playables;
-
-namespace Timeline.Samples
-{
-    // Runtime representation of a TextClip.
-    // The Serializable attribute is required to be animated by timeline, and used as a template.
-    [Serializable]
-    public class TextPlayableBehaviour : PlayableBehaviour
-    {
-        [Tooltip("The color of the text")]
-        public Color color = Color.white;
-
-        [Tooltip("The size of the font to use")]
-        public int fontSize = 14;
-
-        [Tooltip("The text to display")]
-        public string text = "";
-    }
-}
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:56cad419efc07916753d5b8e2ab918755585acea0de1b3a7d4244344449ce3d0
+size 617

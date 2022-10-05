@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_AqnParser : PluginAcknowledgement
-    {
-        public Acknowledgement_AqnParser(Plugin plugin) : base(plugin) { }
-
-        public override string title => "AQN Parser";
-        public override string author => "Christophe Bertrand";
-        public override int? copyrightYear => 2013;
-        public override string url => "https://www.codeproject.com/Tips/624300/AssemblyQualifiedName-Parser";
-        public override string licenseName => "Microsoft Public License";
-        public override string licenseText => CommonLicenses.MSPL;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4bd8fb019b62f4f9c33d2708ad863bc3c686e48c660367aa4f33a74a91377116
+size 640

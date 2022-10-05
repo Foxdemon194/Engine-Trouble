@@ -1,24 +1,3 @@
-using NotNull = JetBrains.Annotations.NotNullAttribute;
-using CanBeNull = JetBrains.Annotations.CanBeNullAttribute;
-
-namespace Unity.Services.Core.Internal
-{
-    interface IPackageRegistry
-    {
-        [CanBeNull]
-        DependencyTree Tree { get; set; }
-
-        CoreRegistration RegisterPackage<TPackage>(
-            [NotNull] TPackage package)
-            where TPackage : IInitializablePackage;
-
-        void RegisterDependency<TComponent>(int packageTypeHash)
-            where TComponent : IServiceComponent;
-
-        void RegisterOptionalDependency<TComponent>(int packageTypeHash)
-            where TComponent : IServiceComponent;
-
-        void RegisterProvision<TComponent>(int packageTypeHash)
-            where TComponent : IServiceComponent;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d86de69098651d125014add77b0ec12d34ac0e6bbd9b7ec48aca53ab484513d0
+size 765

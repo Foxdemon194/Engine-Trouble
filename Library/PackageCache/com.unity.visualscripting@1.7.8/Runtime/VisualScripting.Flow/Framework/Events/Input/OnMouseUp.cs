@@ -1,14 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the user has released the mouse button.
-    /// </summary>
-    [UnitCategory("Events/Input")]
-    public sealed class OnMouseUp : GameObjectEventUnit<EmptyEventArgs>, IMouseEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnMouseUpMessageListener);
-        protected override string hookName => EventHooks.OnMouseUp;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:56e80528c626e997c6992a510253ace3a02984738e48c98192e21df96f95c26d
+size 443

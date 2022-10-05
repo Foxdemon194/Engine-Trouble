@@ -1,12 +1,3 @@
-using System.Runtime.CompilerServices;
-
-[assembly: InternalsVisibleTo("Unity.Services.Core.Editor")]
-[assembly: InternalsVisibleTo("Unity.Services.Core.Registration")]
-
-#if UNITY_INCLUDE_TESTS
-[assembly: InternalsVisibleTo("Unity.Services.Core.Tests")]
-[assembly: InternalsVisibleTo("Unity.Services.Core.EditorTests")]
-[assembly: InternalsVisibleTo("Unity.Services.Core.TestUtils.Tests")]
-[assembly: InternalsVisibleTo("Unity.Services.Core.TestUtils.EditorTests")]
-[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:81e6d77e4263297b0751a4387a48078729bf7074b65bfea6c0c625c7ba08dc3e
+size 531

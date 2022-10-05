@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_DotNetZip : PluginAcknowledgement
-    {
-        public Acknowledgement_DotNetZip(Plugin plugin) : base(plugin) { }
-
-        public override string title => "DotNetZip";
-        public override string author => "Ionic";
-        public override int? copyrightYear => 2017;
-        public override string url => "https://dotnetzip.codeplex.com/";
-        public override string licenseName => "Microsoft Public License";
-        public override string licenseText => CommonLicenses.MSPL;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c3af4704714ed0fd299109e660678851e2812c5f8910c4c1bbd69ebc41b69954
+size 588

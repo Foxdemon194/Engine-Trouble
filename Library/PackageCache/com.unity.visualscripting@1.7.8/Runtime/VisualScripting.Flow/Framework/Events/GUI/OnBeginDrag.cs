@@ -1,16 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called on the drag object when dragging is about to begin.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [TypeIcon(typeof(OnDrag))]
-    [UnitOrder(16)]
-    public sealed class OnBeginDrag : PointerEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnBeginDragMessageListener);
-        protected override string hookName => EventHooks.OnBeginDrag;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e691d86c3540ff2ba8d32f84838ef4979c2b5cae85a49c576d4ea0cfd2ba3c2
+size 469

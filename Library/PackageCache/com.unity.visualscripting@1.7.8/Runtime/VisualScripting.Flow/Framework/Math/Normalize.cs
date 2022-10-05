@@ -1,35 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [UnitOrder(401)]
-    public abstract class Normalize<T> : Unit
-    {
-        /// <summary>
-        /// The vector to normalize.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ValueInput input { get; private set; }
-
-        /// <summary>
-        /// The normalized vector.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ValueOutput output { get; private set; }
-
-        protected override void Definition()
-        {
-            input = ValueInput<T>(nameof(input));
-            output = ValueOutput(nameof(output), Operation).Predictable();
-
-            Requirement(input, output);
-        }
-
-        private T Operation(Flow flow)
-        {
-            return Operation(flow.GetValue<T>(input));
-        }
-
-        public abstract T Operation(T input);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc6fd4a46535cc9820b9e8ffdc849a564fa52d1c2da23439633b972416f87305
+size 884

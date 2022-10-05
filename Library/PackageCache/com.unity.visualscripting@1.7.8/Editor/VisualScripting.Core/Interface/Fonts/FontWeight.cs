@@ -1,16 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public enum FontWeight
-    {
-        Thin = 100,
-        ExtraLight = 200,
-        Light = 300,
-        Regular = 400,
-        Normal = 400,
-        Medium = 500,
-        SemiBold = 600,
-        Bold = 700,
-        ExtraBold = 800,
-        Black = 900
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:81e1e7bd33f08d632eb729ce41b5dd46db4bb3d22ffe0a2c255f62db082acdc8
+size 298

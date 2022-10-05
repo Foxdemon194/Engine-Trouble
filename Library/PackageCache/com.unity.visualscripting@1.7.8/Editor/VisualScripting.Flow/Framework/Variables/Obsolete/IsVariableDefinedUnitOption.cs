@@ -1,20 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(IsVariableDefinedUnit))]
-    public class IsVariableDefinedUnitOption<TVariableUnit> : VariableUnitOption<TVariableUnit> where TVariableUnit : IsVariableDefinedUnit
-    {
-        public IsVariableDefinedUnitOption() : base() { }
-
-        public IsVariableDefinedUnitOption(TVariableUnit unit) : base(unit) { }
-
-        public override string Kind()
-        {
-            return base.Kind().TrimStart("Is ").TrimEnd(" Defined");
-        }
-
-        protected override string DefaultNameLabel()
-        {
-            return $"Is {unit.defaultName} Defined";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:44a36bf167261b79b526a9b3fcb246d27702f5d20368f5916c43b10d8d32f39c
+size 631

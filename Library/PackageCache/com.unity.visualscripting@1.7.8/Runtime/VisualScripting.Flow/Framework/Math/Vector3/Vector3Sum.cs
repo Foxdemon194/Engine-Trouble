@@ -1,34 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the sum of two or more 3D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 3")]
-    [UnitTitle("Add")]
-    public sealed class Vector3Sum : Sum<Vector3>, IDefaultValue<Vector3>
-    {
-        [DoNotSerialize]
-        public Vector3 defaultValue => Vector3.zero;
-
-        public override Vector3 Operation(Vector3 a, Vector3 b)
-        {
-            return a + b;
-        }
-
-        public override Vector3 Operation(IEnumerable<Vector3> values)
-        {
-            var sum = Vector3.zero;
-
-            foreach (var value in values)
-            {
-                sum += value;
-            }
-
-            return sum;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:58ed554dbedea586c9b5e0cb2880f401684648e80ba1f88604d3fd3cc7e223e2
+size 780

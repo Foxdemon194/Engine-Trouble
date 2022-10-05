@@ -1,16 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Widget(typeof(ControlOutput))]
-    public class ControlOutputWidget : UnitOutputPortWidget<ControlOutput>
-    {
-        public ControlOutputWidget(FlowCanvas canvas, ControlOutput port) : base(canvas, port) { }
-
-        protected override Texture handleTextureConnected => BoltFlow.Icons.controlPortConnected?[12];
-
-        protected override Texture handleTextureUnconnected => BoltFlow.Icons.controlPortUnconnected?[12];
-
-        protected override bool colorIfActive => !BoltFlow.Configuration.animateControlConnections || !BoltFlow.Configuration.animateValueConnections;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a1abf41ef92af372741b6b7159e0711ee19af9bb76c952a40bf01861fdbbd2d
+size 642

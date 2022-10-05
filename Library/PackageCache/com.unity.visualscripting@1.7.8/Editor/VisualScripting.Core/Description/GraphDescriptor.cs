@@ -1,33 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(IGraph))]
-    public class GraphDescriptor<TGraph, TGraphDescription> : Descriptor<TGraph, TGraphDescription>
-        where TGraph : class, IGraph
-        where TGraphDescription : class, IGraphDescription, new()
-    {
-        protected GraphDescriptor(TGraph target) : base(target) { }
-
-        protected TGraph graph => target;
-
-        [Assigns(cache = false)]
-        [RequiresUnityAPI]
-        public override string Title()
-        {
-            return StringUtility.FallbackWhitespace(graph.title, graph.GetType().HumanName());
-        }
-
-        [Assigns]
-        [RequiresUnityAPI]
-        public override string Summary()
-        {
-            return graph.summary;
-        }
-
-        [Assigns]
-        [RequiresUnityAPI]
-        public override EditorTexture Icon()
-        {
-            return graph.GetType().Icon();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:796f9eb9b592be48c463ce54a7a90bb9a2cebd4408bd9f89ba509cb281f8b50b
+size 905

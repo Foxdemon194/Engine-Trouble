@@ -1,20 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class PluginAttribute : Attribute
-    {
-        public PluginAttribute(string id)
-        {
-            if (id == null)
-            {
-                throw new ArgumentNullException(nameof(id));
-            }
-
-            this.id = id;
-        }
-
-        public string id { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8668ffda2098d9d4573b76cdf95666555571ffbe425b1ed977d2b8ffc11096fd
+size 449

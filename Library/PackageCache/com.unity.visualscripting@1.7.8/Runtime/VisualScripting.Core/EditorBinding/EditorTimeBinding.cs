@@ -1,22 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public static class EditorTimeBinding
-    {
-        public static Func<int> frameBinding;
-
-        public static Func<float> timeBinding;
-
-        public static int frame => (frameBinding != null && UnityThread.allowsAPI) ? frameBinding() : 0;
-
-        public static float time => (timeBinding != null && UnityThread.allowsAPI) ? timeBinding() : 0;
-
-        static EditorTimeBinding()
-        {
-            frameBinding = () => Time.frameCount;
-            timeBinding = () => Time.time;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:067d4f0f60c8855147e6b7fa7c63742bb65143c84ebcf6aeb1072ebdd28b0f26
+size 578

@@ -1,13 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(UnifiedVariableUnit))]
-    public class UnifiedVariableUnitDescriptor<TVariableUnit> : UnitDescriptor<TVariableUnit> where TVariableUnit : UnifiedVariableUnit
-    {
-        public UnifiedVariableUnitDescriptor(TVariableUnit unit) : base(unit) { }
-
-        protected override EditorTexture DefinedIcon()
-        {
-            return BoltCore.Icons.VariableKind(unit.kind);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b90e15554d55277299a08e4d1ea195159072d16859a6dadbf27a0431087777f
+size 447

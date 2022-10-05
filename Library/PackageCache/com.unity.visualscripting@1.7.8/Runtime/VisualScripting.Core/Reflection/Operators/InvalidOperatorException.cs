@@ -1,10 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public sealed class InvalidOperatorException : OperatorException
-    {
-        public InvalidOperatorException(string symbol, Type type) : base($"Operator '{symbol}' cannot be applied to operand of type '{type?.ToString() ?? "null"}'.") { }
-        public InvalidOperatorException(string symbol, Type leftType, Type rightType) : base($"Operator '{symbol}' cannot be applied to operands of type '{leftType?.ToString() ?? "null"}' and '{rightType?.ToString() ?? "null"}'.") { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c3eb9bcc9dcac9aa149c5899d76c6de7dbbaca1692adfc07ce10d5c637dca4ac
+size 537

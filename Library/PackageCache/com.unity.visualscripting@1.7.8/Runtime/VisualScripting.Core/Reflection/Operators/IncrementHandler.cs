@@ -1,20 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public sealed class IncrementHandler : UnaryOperatorHandler
-    {
-        public IncrementHandler() : base("Increment", "Increment", "++", "op_Increment")
-        {
-            Handle<byte>(a => ++a);
-            Handle<sbyte>(a => ++a);
-            Handle<short>(a => ++a);
-            Handle<ushort>(a => ++a);
-            Handle<int>(a => ++a);
-            Handle<uint>(a => ++a);
-            Handle<long>(a => ++a);
-            Handle<ulong>(a => ++a);
-            Handle<float>(a => ++a);
-            Handle<decimal>(a => ++a);
-            Handle<double>(a => ++a);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6aaa81e08ea44c106d17d54e28442ca42cfc796daf99948dbe9bbb4d278d87dc
+size 627

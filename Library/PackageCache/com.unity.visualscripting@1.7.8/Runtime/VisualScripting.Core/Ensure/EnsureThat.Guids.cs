@@ -1,20 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public partial class EnsureThat
-    {
-        public void IsNotEmpty(Guid value)
-        {
-            if (!Ensure.IsActive)
-            {
-                return;
-            }
-
-            if (value.Equals(Guid.Empty))
-            {
-                throw new ArgumentException(ExceptionMessages.Guids_IsNotEmpty_Failed, paramName);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:504686915e60e083ddcb306f04d1321c0c7606aa9a88d0fdda97df23e0f4a30f
+size 418

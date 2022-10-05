@@ -1,21 +1,3 @@
-using UnityEngine;
-using UnityEditor;
-using UnityEngine.Timeline;
-using UnityEngine.Playables;
-
-namespace UnityEditor.Timeline
-{
-    static class TrackModifier
-    {
-        public static bool DeleteTrack(TimelineAsset timeline, TrackAsset track)
-        {
-            if (TimelineEditor.inspectedDirector != null)
-            {
-                TimelineUndo.PushUndo(TimelineEditor.inspectedDirector, L10n.Tr("Delete Track"));
-                TimelineEditor.inspectedDirector.ClearGenericBinding(track);
-            }
-
-            return timeline.DeleteTrack(track);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e114502504cdd279073b5f8cb3357b11a24a7a296a24255de1353662a4734811
+size 585

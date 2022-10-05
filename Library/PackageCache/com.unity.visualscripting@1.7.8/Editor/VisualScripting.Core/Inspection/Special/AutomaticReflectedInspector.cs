@@ -1,14 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public sealed class AutomaticReflectedInspector : ReflectedInspector
-    {
-        public AutomaticReflectedInspector(Metadata metadata) : base(metadata) { }
-
-        public override void Initialize()
-        {
-            metadata.instantiate = true;
-
-            base.Initialize();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2cf504459a20f0d6960ac415876d951c51a121d6042b5a8e98dfc39a279b4582
+size 340

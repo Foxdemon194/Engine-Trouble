@@ -1,22 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltState.ID)]
-    internal class Changelog_1_0_2 : PluginChangelog
-    {
-        public Changelog_1_0_2(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.0.2";
-        public override DateTime date => new DateTime(2017, 09, 08);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Order-of-operations issues with transitions and updates";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1bed3ad46c389352540b726d8cd3c49539e4204bc414d90ef44a91a6cbf29244
+size 585

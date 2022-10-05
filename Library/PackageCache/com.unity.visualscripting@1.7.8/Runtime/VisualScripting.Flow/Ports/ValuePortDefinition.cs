@@ -1,27 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public abstract class ValuePortDefinition : UnitPortDefinition, IUnitValuePortDefinition
-    {
-        // For the virtual inheritors
-        [SerializeAs(nameof(_type))]
-        private Type _type { get; set; }
-
-        [Inspectable]
-        [DoNotSerialize]
-        public virtual Type type
-        {
-            get
-            {
-                return _type;
-            }
-            set
-            {
-                _type = value;
-            }
-        }
-
-        public override bool isValid => base.isValid && type != null;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97a1861f5217c0f28eff04788ebf0f1b4e083e54420f6dbf7492c6d361a1483e
+size 593

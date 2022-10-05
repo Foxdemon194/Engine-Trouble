@@ -1,16 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Migration_1_4_0_f5_to_1_4_0_f6 : BoltCoreMigration
-    {
-        public Migration_1_4_0_f5_to_1_4_0_f6(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion @from => "1.4.0f5";
-        public override SemanticVersion to => "1.4.0f6";
-
-        public override void Run()
-        {
-            AddDefaultTypeOption(typeof(UnityEngine.Resources));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d04443566e689c955966f652bd01ba3ed759b875cb20d421415a0c8b535f4e42
+size 463

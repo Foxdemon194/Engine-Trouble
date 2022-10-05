@@ -1,15 +1,3 @@
-using Unity.Services.Core.Internal;
-
-namespace Unity.Services.Authentication.Internal
-{
-    /// <summary>
-    /// Component providing the Environment Id
-    /// </summary>
-    public interface IEnvironmentId : IServiceComponent
-    {
-        /// <summary>
-        /// Returns the Environment ID when a sign in succeeds, otherwise null.
-        /// </summary>
-        string EnvironmentId { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:df968decfd62c3c3098cfe8a6f8c559b9c28eef3545b3b5dab93fd02ca15d62d
+size 405

@@ -1,10 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public sealed class UnitDescription : GraphElementDescription
-    {
-        public string shortTitle { get; set; }
-        public string surtitle { get; set; }
-        public string subtitle { get; set; }
-        public EditorTexture[] icons { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:91b4857d01e81b5536c6f621dc480da4a2ec11b1f29eef30cbafded883a7154b
+size 302

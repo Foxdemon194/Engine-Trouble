@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false, Inherited = true)]
-    public sealed class IncludeInSettingsAttribute : Attribute
-    {
-        public IncludeInSettingsAttribute(bool include)
-        {
-            this.include = include;
-        }
-
-        public bool include { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab6cde00182a4981aff94ce39bd4b5b16222b4b59857d8a989299e47cd496cca
+size 401

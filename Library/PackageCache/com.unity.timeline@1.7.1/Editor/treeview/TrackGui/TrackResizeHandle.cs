@@ -1,32 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.Timeline
-{
-    class TrackResizeHandle : IBounds
-    {
-        public Rect boundingRect { get; private set; }
-
-        public TimelineTrackGUI trackGUI { get; }
-
-        public TrackResizeHandle(TimelineTrackGUI trackGUI)
-        {
-            this.trackGUI = trackGUI;
-        }
-
-        public void Draw(Rect headerRect, WindowState state)
-        {
-            const float resizeHandleHeight = WindowConstants.trackResizeHandleHeight;
-            var rect = new Rect(headerRect.xMin, headerRect.yMax - (0.5f * resizeHandleHeight), headerRect.width, resizeHandleHeight);
-            boundingRect = trackGUI.ToWindowSpace(rect);
-
-            Rect cursorRect = rect;
-            cursorRect.height--;
-
-            if (GUIUtility.hotControl == 0)
-            {
-                EditorGUIUtility.AddCursorRect(cursorRect, MouseCursor.SplitResizeUpDown);
-                state.headerSpacePartitioner.AddBounds(this);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:511481bdb0b5f5181b324275a89f8c5c5d23c71ee7f0868b5a2ac8d1d9a54852
+size 986

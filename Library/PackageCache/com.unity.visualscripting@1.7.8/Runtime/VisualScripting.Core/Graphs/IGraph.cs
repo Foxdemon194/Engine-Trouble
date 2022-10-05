@@ -1,26 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public interface IGraph : IDisposable, IPrewarmable, IAotStubbable, ISerializationDepender
-    {
-        Vector2 pan { get; set; }
-
-        float zoom { get; set; }
-
-        MergedGraphElementCollection elements { get; }
-
-        string title { get; }
-
-        string summary { get; }
-
-        IGraphData CreateData();
-
-        IGraphDebugData CreateDebugData();
-
-        void Instantiate(GraphReference instance);
-
-        void Uninstantiate(GraphReference instance);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3369791a75763c48d5c78af5bc882cda1049b48e3f9dbb87aa915be1b62fca7
+size 549

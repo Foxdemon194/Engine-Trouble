@@ -1,14 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_YamlDotNet : PluginAcknowledgement
-    {
-        public Acknowledgement_YamlDotNet(Plugin plugin) : base(plugin) { }
-
-        public override string title => "YamlDotNet";
-        public override string author => "Antoine Aubry";
-        public override string url => "http://aaubry.net/pages/yamldotnet.html";
-        public override string licenseName => "MIT";
-        public override string licenseText => CommonLicenses.MIT;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5747ee62ff3c5244ffe443a15e0f2b7ba917304e8268ac2111fd558e9be6c5a8
+size 533

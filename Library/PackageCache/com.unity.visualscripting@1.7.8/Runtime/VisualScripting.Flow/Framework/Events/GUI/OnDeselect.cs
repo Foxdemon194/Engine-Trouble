@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the pointer deselects the GUI element.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [UnitOrder(23)]
-    public sealed class OnDeselect : GenericGuiEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnDeselectMessageListener);
-        protected override string hookName => EventHooks.OnDeselect;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:803a9e184cf9bd5051e86d39b30ea4acf2cae4333144d46c7be75756d9028bf9
+size 430

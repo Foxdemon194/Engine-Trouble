@@ -1,24 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting.Dependencies.NCalc
-{
-    public class ParameterArgs : EventArgs
-    {
-        private object _result;
-
-        public object Result
-        {
-            get
-            {
-                return _result;
-            }
-            set
-            {
-                _result = value;
-                HasResult = true;
-            }
-        }
-
-        public bool HasResult { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eca6a64ddc2cff2fd58d6687252dfc2dd45084f6b4d5746076dc7495e512e99e
+size 439

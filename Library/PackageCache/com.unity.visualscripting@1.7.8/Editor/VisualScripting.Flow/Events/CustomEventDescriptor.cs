@@ -1,25 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(CustomEvent))]
-    public class CustomEventDescriptor : EventUnitDescriptor<CustomEvent>
-    {
-        public CustomEventDescriptor(CustomEvent @event) : base(@event) { }
-
-        protected override string DefinedSubtitle()
-        {
-            return null;
-        }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            var index = unit.argumentPorts.IndexOf(port as ValueOutput);
-
-            if (index >= 0)
-            {
-                description.label = "Arg. " + index;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:836389fb7aa8f9ced08b1c9fa42163a9326fd97a561b6aec8c51d840dc92104b
+size 681

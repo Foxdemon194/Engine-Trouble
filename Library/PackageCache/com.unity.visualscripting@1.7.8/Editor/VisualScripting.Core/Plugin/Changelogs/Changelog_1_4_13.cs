@@ -1,25 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Changelog_1_4_13 : PluginChangelog
-    {
-        public Changelog_1_4_13(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.13";
-
-        public override DateTime date => new DateTime(2020, 09, 14);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Added] Integrated Bolt into Unity Usage Analytics";
-                yield return "[Fixed] Local build machine file paths appearing in stack traces on user machines";
-                yield return "[Fixed] Unity compiler warnings around deprecated code";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2372614b539feaf5e55b6a06c9832f7cf59e23d3e14cdb5757a836d6010c7fb8
+size 776

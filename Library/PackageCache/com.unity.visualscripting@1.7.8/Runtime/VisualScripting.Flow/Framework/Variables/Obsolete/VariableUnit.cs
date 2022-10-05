@@ -1,35 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [SpecialUnit]
-    [Obsolete("Use the new unified variable nodes instead.")]
-    public abstract class VariableUnit : Unit, IVariableUnit
-    {
-        protected VariableUnit() : base() { }
-
-        protected VariableUnit(string defaultName)
-        {
-            Ensure.That(nameof(defaultName)).IsNotNull(defaultName);
-
-            this.defaultName = defaultName;
-        }
-
-        [DoNotSerialize]
-        public string defaultName { get; } = string.Empty;
-
-        /// <summary>
-        /// The name of the variable.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ValueInput name { get; private set; }
-
-        protected abstract VariableDeclarations GetDeclarations(Flow flow);
-
-        protected override void Definition()
-        {
-            name = ValueInput(nameof(name), defaultName);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:da59e1958dbfec3a85afd4991d03c34afc1574ba99423d3a5a1aaceecc11af9c
+size 910

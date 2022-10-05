@@ -1,21 +1,3 @@
-/* Custom USS stylesheet for Annotation. */
-
-/* A marker will use the default style when it is collapsed.*/
-.AnnotationStyle
-{
-    background-image: resource("light/timeline_annotation_collapsed");
-}
-
-/* A marker will use the hover:focus:checked pseudo-state when it is selected.*/
-
-
-.AnnotationStyle:hover:checked
-{
-    background-image: resource("light/timeline_annotation_selected");
-}
-
-/* A marker will use this style when it is not selected and not collapsed.*/
-.AnnotationStyle:checked
-{
-    background-image: resource("light/timeline_annotation");
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e42669f7c1b68484ca5b56b63123dda991b932890eb94ceb5f9072936943baa
+size 557

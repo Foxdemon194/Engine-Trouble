@@ -1,12 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false, Inherited = true)]
-    public sealed class InspectableAttribute : Attribute, IInspectableAttribute
-    {
-        public InspectableAttribute() { }
-
-        public int order { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:52e076cdbe5509a9026bc319dcd2306d9659a44a79e4495f4ac870d0043b0e2d
+size 390

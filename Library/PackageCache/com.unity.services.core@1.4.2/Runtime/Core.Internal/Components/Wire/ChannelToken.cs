@@ -1,17 +1,3 @@
-namespace Unity.Services.Wire.Internal
-{
-    /// <summary>
-    /// This structure represents the necessary data to perform a Wire subscription to an <see cref="IChannel"/>
-    /// </summary>
-    public struct ChannelToken
-    {
-        /// <summary>
-        /// This is a string identifying a Channel on which a service publishes messages.
-        /// </summary>
-        public string ChannelName;
-        /// <summary>
-        /// This is an authorization token emitted by the service who owns the Channel for this specific UAS Id.
-        /// </summary>
-        public string Token;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a96b4dda3a3382d01bc5a718b1d64ae89566a3e2d99df745cbb9c7ec8f3012ab
+size 593

@@ -1,23 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEngine.Timeline
-{
-    /// <summary>
-    /// A PlayableTrack is a track whose clips are custom playables.
-    /// </summary>
-    /// <remarks>
-    /// This is a track that can contain PlayableAssets that are found in the project and do not have their own specified track type.
-    /// </remarks>
-    [Serializable]
-    [TimelineHelpURL(typeof(PlayableTrack))]
-    public class PlayableTrack : TrackAsset
-    {
-        /// <inheritdoc />
-        protected override void OnCreateClip(TimelineClip clip)
-        {
-            if (clip.asset != null)
-                clip.displayName = clip.asset.GetType().Name;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a0e3e61a8c9e0f0c1b0a07037bb6e912fd70d035590f445eb93c2c2bd385a96f
+size 675

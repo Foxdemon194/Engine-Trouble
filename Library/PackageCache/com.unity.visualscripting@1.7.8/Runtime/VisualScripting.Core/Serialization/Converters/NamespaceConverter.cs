@@ -1,34 +1,3 @@
-using System;
-using Unity.VisualScripting.FullSerializer;
-
-namespace Unity.VisualScripting
-{
-    public class NamespaceConverter : fsDirectConverter
-    {
-        public override Type ModelType => typeof(Namespace);
-
-        public override object CreateInstance(fsData data, Type storageType)
-        {
-            return new object();
-        }
-
-        public override fsResult TrySerialize(object instance, out fsData serialized, Type storageType)
-        {
-            serialized = new fsData(((Namespace)instance).FullName);
-
-            return fsResult.Success;
-        }
-
-        public override fsResult TryDeserialize(fsData data, ref object instance, Type storageType)
-        {
-            if (!data.IsString)
-            {
-                return fsResult.Fail("Expected string in " + data);
-            }
-
-            instance = Namespace.FromFullName(data.AsString);
-
-            return fsResult.Success;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f21f612dc8962933163dec02121e7745ae08b55808738a57c58d6bb6846b8bb6
+size 937

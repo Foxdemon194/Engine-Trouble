@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the pointer exits the GUI element.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [UnitOrder(15)]
-    public sealed class OnPointerExit : PointerEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnPointerExitMessageListener);
-        protected override string hookName => EventHooks.OnPointerExit;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:94e77c6a058507b93e1b89d310f10bcf6af16c3ee9ac5d5f151b546ae02537aa
+size 432

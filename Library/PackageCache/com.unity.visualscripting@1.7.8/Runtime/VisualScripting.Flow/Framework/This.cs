@@ -1,36 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the current game object.
-    /// </summary>
-    [SpecialUnit]
-    [RenamedFrom("Bolt.Self")]
-    [RenamedFrom("Unity.VisualScripting.Self")]
-    public sealed class This : Unit
-    {
-        /// <summary>
-        /// The current game object.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        [PortLabel("This")]
-        public ValueOutput self { get; private set; }
-
-        protected override void Definition()
-        {
-            self = ValueOutput(nameof(self), Result).PredictableIf(IsPredictable);
-        }
-
-        private GameObject Result(Flow flow)
-        {
-            return flow.stack.self;
-        }
-
-        private bool IsPredictable(Flow flow)
-        {
-            return flow.stack.self != null;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f940f6caab702fdf9ead7d50ae44a0872bdc61fa8d821709e6a1645a394cf9b
+size 856

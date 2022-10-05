@@ -1,35 +1,3 @@
-using System.Collections;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Delays flow by waiting while a condition is true.
-    /// </summary>
-    [UnitTitle("Wait While")]
-    [UnitShortTitle("Wait While")]
-    [UnitOrder(3)]
-    public class WaitWhileUnit : WaitUnit
-    {
-        /// <summary>
-        /// The condition to check.
-        /// </summary>
-        [DoNotSerialize]
-        public ValueInput condition { get; private set; }
-
-        protected override void Definition()
-        {
-            base.Definition();
-
-            condition = ValueInput<bool>(nameof(condition));
-            Requirement(condition, enter);
-        }
-
-        protected override IEnumerator Await(Flow flow)
-        {
-            yield return new WaitWhile(() => flow.GetValue<bool>(condition));
-
-            yield return exit;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1afd30b4702be76b0147493d2550b147ba25f54187e3d7a147cc3563ae3545fa
+size 868

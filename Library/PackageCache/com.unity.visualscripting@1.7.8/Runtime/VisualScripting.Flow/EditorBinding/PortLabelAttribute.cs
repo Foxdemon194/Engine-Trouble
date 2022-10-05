@@ -1,16 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false, Inherited = false)]
-    public class PortLabelAttribute : Attribute
-    {
-        public PortLabelAttribute(string label)
-        {
-            this.label = label;
-        }
-
-        public string label { get; private set; }
-        public bool hidden { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7a9816dedd6af0236e28b69e3fba96444a5fd07625fa00e65f1195ffc488b99
+size 418

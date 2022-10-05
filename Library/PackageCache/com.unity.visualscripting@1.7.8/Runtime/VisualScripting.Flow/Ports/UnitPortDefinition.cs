@@ -1,21 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public abstract class UnitPortDefinition : IUnitPortDefinition
-    {
-        [Serialize, Inspectable, InspectorDelayed]
-        [WarnBeforeEditing("Edit Port Key", "Changing the key of this definition will break any existing connection to this port. Are you sure you want to continue?", null, "")]
-        public string key { get; set; }
-
-        [Serialize, Inspectable]
-        public string label { get; set; }
-
-        [Serialize, Inspectable, InspectorTextArea]
-        public string summary { get; set; }
-
-        [Serialize, Inspectable]
-        public bool hideLabel { get; set; }
-
-        [DoNotSerialize]
-        public virtual bool isValid => !string.IsNullOrEmpty(key);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:04c165d7f3357685262de5e48d86d4b4f587b7d520bd1af560ecca20ea3261a9
+size 728

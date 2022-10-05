@@ -1,35 +1,3 @@
-using UnityObject = UnityEngine.Object;
-
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(IMachine))]
-    public class MachineDescriptor<TMachine, TMachineDescription> : Descriptor<TMachine, TMachineDescription>
-        where TMachine : UnityObject, IMachine
-        where TMachineDescription : class, IMachineDescription, new()
-    {
-        protected MachineDescriptor(TMachine target) : base(target) { }
-
-        protected TMachine machine => target;
-
-        [Assigns(cache = false)]
-        [RequiresUnityAPI]
-        public override string Title()
-        {
-            return machine.name;
-        }
-
-        [Assigns]
-        [RequiresUnityAPI]
-        public override string Summary()
-        {
-            return null;
-        }
-
-        [Assigns]
-        [RequiresUnityAPI]
-        public override EditorTexture Icon()
-        {
-            return machine.GetType().Icon();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c3564cfd7c7611a54a6ec0819a0561fd543a51ed9c72bf9bb984450327921b44
+size 911

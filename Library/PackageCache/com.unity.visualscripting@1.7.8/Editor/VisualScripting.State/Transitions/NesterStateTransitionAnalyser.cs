@@ -1,29 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Analyser(typeof(INesterStateTransition))]
-    public class NesterStateTransitionAnalyser<TGraphNesterStateTransition> : StateTransitionAnalyser<TGraphNesterStateTransition>
-        where TGraphNesterStateTransition : class, INesterStateTransition
-    {
-        public NesterStateTransitionAnalyser(GraphReference reference, TGraphNesterStateTransition transition) : base(reference, transition) { }
-
-        protected override IEnumerable<Warning> Warnings()
-        {
-            foreach (var baseWarning in base.Warnings())
-            {
-                yield return baseWarning;
-            }
-
-            if (transition.childGraph == null)
-            {
-                yield return Warning.Caution("Missing transition graph.");
-            }
-
-            if (transition.nest.hasBackgroundEmbed)
-            {
-                yield return Warning.Caution("Background embed graph detected.");
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:762d76aca249e26417cb5cf253145e0d9a449c68f128084cd86e2b0efec48e1a
+size 1001

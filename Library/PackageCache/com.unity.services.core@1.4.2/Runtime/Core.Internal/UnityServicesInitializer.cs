@@ -1,24 +1,3 @@
-using UnityEngine;
-
-namespace Unity.Services.Core.Internal
-{
-    static class UnityServicesInitializer
-    {
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
-        static void CreateStaticInstance()
-        {
-            CoreRegistry.Instance = new CoreRegistry();
-            CoreMetrics.Instance = new CoreMetrics();
-            CoreDiagnostics.Instance = new CoreDiagnostics();
-            UnityServices.Instance = new UnityServicesInternal(CoreRegistry.Instance, CoreMetrics.Instance, CoreDiagnostics.Instance);
-            UnityServices.InstantiationCompletion?.TrySetResult(null);
-        }
-
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
-        static async void EnableServicesInitializationAsync()
-        {
-            var instance = (UnityServicesInternal)UnityServices.Instance;
-            await instance.EnableInitializationAsync();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:437708633e1ee0bb2bbcd965bd5618a7cdd3490ceeb63abfc94e5803e50fb9d3
+size 942

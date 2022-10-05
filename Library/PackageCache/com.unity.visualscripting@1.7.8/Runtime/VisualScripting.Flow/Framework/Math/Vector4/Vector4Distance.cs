@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the distance between two 4D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 4")]
-    [UnitTitle("Distance")]
-    public sealed class Vector4Distance : Distance<UnityEngine.Vector4>
-    {
-        public override float Operation(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
-        {
-            return UnityEngine.Vector4.Distance(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3d9e6ab503f7132b26007466c543e1ce6fab4bad12010b5fba6a49351b06a67
+size 435

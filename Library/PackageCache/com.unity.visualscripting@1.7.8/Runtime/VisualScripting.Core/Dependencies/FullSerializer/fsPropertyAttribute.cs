@@ -1,31 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting.FullSerializer
-{
-    /// <summary>
-    /// Explicitly mark a property to be serialized. This can also be used to
-    /// give the name that the property should use during serialization.
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
-    public class fsPropertyAttribute : Attribute
-    {
-        public fsPropertyAttribute()
-            : this(string.Empty) { }
-
-        public fsPropertyAttribute(string name)
-        {
-            Name = name;
-        }
-
-        /// <summary>
-        /// The name of that the property will use in JSON serialization.
-        /// </summary>
-        public string Name;
-
-        /// <summary>
-        /// Use a custom converter for the given type. Specify the converter to
-        /// use using typeof.
-        /// </summary>
-        public Type Converter;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7d6d1afdde66e8c56a2503dd66767382cddbb8048ee4069ffd75a01cef3fa76
+size 891

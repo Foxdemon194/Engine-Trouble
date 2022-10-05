@@ -1,27 +1,3 @@
-using System.Collections;
-
-namespace Unity.VisualScripting
-{
-    public class DraggedListItem
-    {
-        public DraggedListItem(MetadataListAdaptor sourceListAdaptor, int index, object item)
-        {
-            this.sourceListAdaptor = sourceListAdaptor;
-            this.index = index;
-            this.item = item;
-        }
-
-        public readonly MetadataListAdaptor sourceListAdaptor;
-        public readonly int index;
-        public readonly object item;
-
-        public IList sourceList => (IList)sourceListAdaptor.metadata.value;
-
-        public static readonly string TypeName = typeof(DraggedListItem).FullName;
-
-        public override string ToString()
-        {
-            return $"{item} ({sourceList}[{index}])";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:546ab896f95b3887f54aa7107106fa2af180dffb2e6a2fa4abf70f1781a1091c
+size 754

@@ -1,16 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltFlow.ID)]
-    internal class Migration_1_3_0_to_1_4_0 : PluginMigration
-    {
-        public Migration_1_3_0_to_1_4_0(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion @from => "1.3.0";
-        public override SemanticVersion to => "1.4.0";
-
-        public override void Run()
-        {
-            UnitBase.Rebuild();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0269475a7ae7d339401d389473c4f4b2f03040484dc4dd323929b9cefae1df01
+size 412

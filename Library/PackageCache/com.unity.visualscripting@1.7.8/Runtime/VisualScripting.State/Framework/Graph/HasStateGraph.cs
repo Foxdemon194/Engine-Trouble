@@ -1,22 +1,3 @@
-using System;
-using JetBrains.Annotations;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Check if a GameObject or StateMachine has a StateGraph
-    /// </summary>
-    [TypeIcon(typeof(StateGraph))]
-    [UnitCategory("Graphs/Graph Nodes")]
-    public sealed class HasStateGraph : HasGraph<StateGraph, StateGraphAsset, StateMachine>
-    {
-        /// <summary>
-        /// The type of object that handles the graph.
-        /// </summary>
-        [Serialize, Inspectable, UnitHeaderInspectable, UsedImplicitly]
-        public StateGraphContainerType containerType { get; set; }
-
-        protected override bool isGameObject => containerType == StateGraphContainerType.GameObject;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4a925a44ce7c2b7124cbcabe03032c3392209673568d2f2041349c24cee33c6
+size 720

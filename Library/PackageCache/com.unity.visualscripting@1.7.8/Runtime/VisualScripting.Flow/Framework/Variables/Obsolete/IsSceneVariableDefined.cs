@@ -1,22 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Checks if a scene variable is defined.
-    /// </summary>
-    [UnitSurtitle("Scene")]
-    public sealed class IsSceneVariableDefined : IsVariableDefinedUnit, ISceneVariableUnit
-    {
-        public IsSceneVariableDefined() : base() { }
-
-        public IsSceneVariableDefined(string defaultName) : base(defaultName) { }
-
-        protected override VariableDeclarations GetDeclarations(Flow flow)
-        {
-            var scene = flow.stack.scene;
-
-            if (scene == null) return null;
-
-            return Variables.Scene(scene.Value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc2e8f1f8facf2ea32bb394214b6814fb2b84d1b2b786af98685a58dd0d4ac7d
+size 620

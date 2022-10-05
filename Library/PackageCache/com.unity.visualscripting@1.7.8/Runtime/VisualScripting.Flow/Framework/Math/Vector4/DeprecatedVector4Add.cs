@@ -1,23 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the sum of two 4D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 4")]
-    [UnitTitle("Add")]
-    [Obsolete("Use the new \"Add (Math/Vector 4)\" instead.")]
-    [RenamedFrom("Bolt.Vector4Add")]
-    [RenamedFrom("Unity.VisualScripting.Vector4Add")]
-    public sealed class DeprecatedVector4Add : Add<Vector4>
-    {
-        protected override Vector4 defaultB => Vector4.zero;
-
-        public override Vector4 Operation(Vector4 a, Vector4 b)
-        {
-            return a + b;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c617fd7799e34894075f5f2e964ac96e203e74e71d06171a340b164204c71fb
+size 607

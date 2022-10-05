@@ -1,13 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called every frame after all update functions have been called.
-    /// </summary>
-    [UnitCategory("Events/Lifecycle")]
-    [UnitOrder(5)]
-    [UnitTitle("On Late Update")]
-    public sealed class LateUpdate : MachineEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => EventHooks.LateUpdate;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:72562a507c2d6e0331ff4859fa7f1e46be3ea4bd3c9c4c1c9dcb166813829e5b
+size 388

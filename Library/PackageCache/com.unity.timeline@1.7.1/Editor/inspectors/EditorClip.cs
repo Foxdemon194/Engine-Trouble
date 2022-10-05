@@ -1,25 +1,3 @@
-using UnityEngine;
-using UnityEngine.Timeline;
-
-namespace UnityEditor.Timeline
-{
-    [ExcludeFromPreset]
-    [TimelineHelpURL(typeof(TimelineClip))]
-    class EditorClip : ScriptableObject
-    {
-        [SerializeField] TimelineClip m_Clip;
-
-        public TimelineClip clip
-        {
-            get { return m_Clip; }
-            set { m_Clip = value; }
-        }
-
-        public int lastHash { get; set; }
-
-        public override int GetHashCode()
-        {
-            return clip.Hash();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c4a0a8ed44b7d3c92fed5042c8735269608473088e5446b26285f7f22dfaac7
+size 512

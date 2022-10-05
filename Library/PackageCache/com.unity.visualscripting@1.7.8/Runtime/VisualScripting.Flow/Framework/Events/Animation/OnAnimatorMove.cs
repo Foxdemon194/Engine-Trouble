@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called at each frame after the state machines and the animations have been evaluated, but before On Animator IK.
-    /// This callback can be used for processing animation movements for modifying root motion.
-    /// </summary>
-    [UnitCategory("Events/Animation")]
-    public sealed class OnAnimatorMove : GameObjectEventUnit<EmptyEventArgs>
-    {
-        public override Type MessageListenerType => typeof(AnimatorMessageListener);
-        protected override string hookName => EventHooks.OnAnimatorMove;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b68d7c7027f87e4c306e808522d98770b2b0161085821154ca14d210569e51d0
+size 591

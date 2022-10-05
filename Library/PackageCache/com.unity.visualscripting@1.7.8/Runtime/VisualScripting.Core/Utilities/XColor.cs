@@ -1,16 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public static class XColor
-    {
-        public static string ToHexString(this Color color)
-        {
-            return
-                ((byte)(color.r * 255)).ToString("X2") +
-                ((byte)(color.g * 255)).ToString("X2") +
-                ((byte)(color.b * 255)).ToString("X2") +
-                ((byte)(color.a * 255)).ToString("X2");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:818f7c6afc523a5de0058893733cac88da067a3c8b68b9d5c833fb3e7f7d09dd
+size 424

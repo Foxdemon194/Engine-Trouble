@@ -1,9 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public sealed class AmbiguousOperatorException : OperatorException
-    {
-        public AmbiguousOperatorException(string symbol, Type leftType, Type rightType) : base($"Ambiguous use of operator '{symbol}' between types '{leftType?.ToString() ?? "null"}' and '{rightType?.ToString() ?? "null"}'.") { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:db61581789123c33031af7f4ff8438bdc57114fba31c5b78f6a59f845157dc4e
+size 364

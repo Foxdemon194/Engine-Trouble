@@ -1,23 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public interface IFuzzyOption
-    {
-        object value { get; }
-        bool parentOnly { get; }
-
-        string label { get; }
-        EditorTexture icon { get; }
-        GUIStyle style { get; }
-
-        string headerLabel { get; }
-        bool showHeaderIcon { get; }
-
-        bool hasFooter { get; }
-        float GetFooterHeight(float width);
-        void OnFooterGUI(Rect position);
-
-        void OnPopulate();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2ee14c65e3f221e6cd9b7c4bf2f9e0ce91e285496ff177507da332b62c79533c
+size 484

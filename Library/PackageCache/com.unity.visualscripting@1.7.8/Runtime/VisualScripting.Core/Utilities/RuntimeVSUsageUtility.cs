@@ -1,25 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public static class RuntimeVSUsageUtility
-    {
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-        private static void RuntimeInitializeOnLoadBeforeSceneLoad()
-        {
-            UnityThread.RuntimeInitialize();
-
-            Ensure.OnRuntimeMethodLoad();
-
-            Recursion.OnRuntimeMethodLoad();
-
-            OptimizedReflection.OnRuntimeMethodLoad();
-
-            SavedVariables.OnEnterPlayMode();
-
-            ApplicationVariables.OnEnterPlayMode();
-
-            ReferenceCollector.Initialize();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c33e227023b16fa2c565a3b1b2a86178bfeb418e274784d07b96ae440b38f27
+size 622

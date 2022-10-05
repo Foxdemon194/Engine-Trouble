@@ -1,16 +1,3 @@
-using System;
-using UnityEngine.Playables;
-
-namespace UnityEngine.Timeline
-{
-    abstract class RuntimeElement : IInterval
-    {
-        public abstract Int64 intervalStart { get; }
-        public abstract Int64 intervalEnd { get; }
-        public int intervalBit { get; set; }
-
-        public abstract bool enable { set; }
-        public abstract void EvaluateAt(double localTime, FrameData frameData);
-        public abstract void DisableAt(double localTime, double rootDuration, FrameData frameData);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:023414738ffe308d84a791f2543c62abb568104d219fb135fa437bab37a0ac4d
+size 512

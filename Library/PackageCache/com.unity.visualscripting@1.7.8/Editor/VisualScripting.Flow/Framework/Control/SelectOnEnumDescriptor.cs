@@ -1,26 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(SelectOnEnum))]
-    public class SelectOnEnumDescriptor : UnitDescriptor<SelectOnEnum>
-    {
-        public SelectOnEnumDescriptor(SelectOnEnum unit) : base(unit) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            foreach (var branch in unit.branches)
-            {
-                if (branch.Value == port)
-                {
-                    var enumValue = (Enum)branch.Key;
-
-                    description.label = enumValue.DisplayName();
-                    description.summary = $"The value to return if the enum has the value '{enumValue}'.";
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b035df451f8db905bf122c1ce05fdec60ef5e1062ea215147fa595cd17f36a2
+size 794

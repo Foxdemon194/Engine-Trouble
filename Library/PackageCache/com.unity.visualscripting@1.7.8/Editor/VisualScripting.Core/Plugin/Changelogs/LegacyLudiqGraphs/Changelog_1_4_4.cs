@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqGraphsChangelog_1_4_4 : PluginChangelog
-    {
-        public LudiqGraphsChangelog_1_4_4(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.4";
-
-        public override DateTime date => new DateTime(2019, 06, 11);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Prewarming routine not getting called on machines";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e1a814dc73060fbf7bbe4ad71128d631062d3492ff0e770ac619f8d1dbacbfd
+size 601

@@ -1,34 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public abstract class FuzzyOption<T> : IFuzzyOption
-    {
-        public T value { get; protected set; }
-
-        object IFuzzyOption.value => value;
-
-        public string label { get; protected set; }
-
-        public EditorTexture icon { get; protected set; }
-
-        public GUIStyle style { get; protected set; }
-
-        public virtual string headerLabel => label;
-
-        public bool parentOnly { get; protected set; }
-
-        public bool showHeaderIcon { get; protected set; }
-
-        public virtual bool hasFooter { get; protected set; }
-
-        public virtual float GetFooterHeight(float width)
-        {
-            return 0;
-        }
-
-        public virtual void OnFooterGUI(Rect position) { }
-
-        public virtual void OnPopulate() { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b6c5e0a3bdc8d06b01bcce0556aa77a53f79e2c233b9ad6406850316ccd58bcc
+size 822

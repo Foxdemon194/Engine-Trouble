@@ -1,20 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    // Allows us to migrate old serialized namespaces to new ones
-    // Ex usage: [assembly: RenamedNamespace("Bolt", "Unity.VisualScripting")]
-    [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
-    public sealed class RenamedNamespaceAttribute : Attribute
-    {
-        public RenamedNamespaceAttribute(string previousName, string newName)
-        {
-            this.previousName = previousName;
-            this.newName = newName;
-        }
-
-        public string previousName { get; }
-
-        public string newName { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b671433ccfe566be61064671ec8acdf0e02fd77f38c14d377b319dd9ebf981d
+size 605

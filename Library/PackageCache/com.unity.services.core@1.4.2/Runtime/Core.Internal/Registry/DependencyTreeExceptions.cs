@@ -1,27 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace Unity.Services.Core.Internal
-{
-    internal class DependencyTreeSortFailedException : Exception
-    {
-        public DependencyTreeSortFailedException(DependencyTree tree, ICollection<int> target)
-            : base(CreateExceptionMessage(tree, target))
-        {
-        }
-
-        public DependencyTreeSortFailedException(DependencyTree tree, ICollection<int> target, Exception inner)
-            : base(CreateExceptionMessage(tree, target, inner), inner)
-        {
-        }
-
-        private static string CreateExceptionMessage(DependencyTree tree, ICollection<int> target, Exception inner = null)
-        {
-            var orderedTreeJson = tree.ToJson(target);
-            var errorMessage = $"Failed to sort tree! It is likely there is a missing required dependency:\n{orderedTreeJson}";
-            errorMessage = errorMessage + (inner != null ? $"\n Error: {inner.Message}" : string.Empty);
-            return errorMessage;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c1e24a917c1092b3c71295a74e57eb3f075d0bd87dfdb39d59952aa780fd7fb3
+size 1036

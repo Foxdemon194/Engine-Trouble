@@ -1,15 +1,3 @@
-{
-    "name": "Timeline.Samples.Video",
-    "references": [
-        "GUID:f06555f75b070af458a003d92f9efb00"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0676ee17a48f94f6674d51f3b9fafc02cd012e186edeeaa431d330143dc083b7
+size 383

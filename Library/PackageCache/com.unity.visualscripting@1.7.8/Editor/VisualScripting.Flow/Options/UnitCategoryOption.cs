@@ -1,16 +1,3 @@
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(UnitCategory))]
-    public class UnitCategoryOption : FuzzyOption<UnitCategory>
-    {
-        public UnitCategoryOption(UnitCategory category)
-        {
-            value = category;
-            label = category.name.Split('/').Last().Prettify();
-            UnityAPI.Async(() => icon = BoltFlow.Icons.UnitCategory(category));
-            parentOnly = true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:304f88b29fd06e1acda730a843e5e05bc9837860ff8c220d241274f932b3edbe
+size 454

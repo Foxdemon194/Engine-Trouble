@@ -1,20 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = false)]
-    public class PluginModuleDependencyAttribute : Attribute
-    {
-        public PluginModuleDependencyAttribute(Type moduleType)
-        {
-            if (moduleType == null)
-            {
-                throw new ArgumentNullException(nameof(moduleType));
-            }
-
-            this.moduleType = moduleType;
-        }
-
-        public Type moduleType { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab72c67c74add3441c76add6c0d2ac7f226ef3e82c95a74cd0369e4c5a6d5a56
+size 524

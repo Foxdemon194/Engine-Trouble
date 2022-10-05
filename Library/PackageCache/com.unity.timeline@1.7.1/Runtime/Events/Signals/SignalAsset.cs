@@ -1,23 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEngine.Timeline
-{
-    /// <summary>
-    /// An asset representing an emitted signal. A SignalAsset connects a SignalEmitter with a SignalReceiver.
-    /// </summary>
-    /// <seealso cref="UnityEngine.Timeline.SignalEmitter"/>
-    /// <seealso cref="UnityEngine.Timeline.SignalReceiver"/>
-    [AssetFileNameExtension("signal")]
-    [TimelineHelpURL(typeof(SignalAsset))]
-    public class SignalAsset : ScriptableObject
-    {
-        internal static event Action<SignalAsset> OnEnableCallback;
-
-        void OnEnable()
-        {
-            if (OnEnableCallback != null)
-                OnEnableCallback(this);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9709162d27be3b2c057f242120e60c914d0c81eecec6d959de94b8f5424e6b7b
+size 677

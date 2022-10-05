@@ -1,19 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the difference between two scalars.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Subtract")]
-    public sealed class ScalarSubtract : Subtract<float>
-    {
-        protected override float defaultMinuend => 1;
-
-        protected override float defaultSubtrahend => 1;
-
-        public override float Operation(float a, float b)
-        {
-            return a - b;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b33a87805a9a1cd856065114563db78dd5ecacfb09fc932064f01ecd3be4530
+size 473

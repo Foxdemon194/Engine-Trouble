@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.Services.Core.Internal
-{
-    /// <summary>
-    /// Placeholder for required <see cref="IServiceComponent"/> registered into a <see cref="CoreRegistry"/>.
-    /// </summary>
-    class MissingComponent : IServiceComponent
-    {
-        public Type IntendedType { get; }
-
-        internal MissingComponent(Type intendedType)
-        {
-            IntendedType = intendedType;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5015c017f008e596eee9725efd5e0147c259b823d889fb6ceb675ed569c61c99
+size 422

@@ -1,36 +1,3 @@
-#pragma warning disable 618
-
-namespace Unity.VisualScripting
-{
-    [UnitShortTitle("Is Variable Defined")]
-    public abstract class IsVariableDefinedUnit : VariableUnit
-    {
-        protected IsVariableDefinedUnit() : base() { }
-
-        protected IsVariableDefinedUnit(string defaultName) : base(defaultName) { }
-
-        /// <summary>
-        /// Whether the variable is defined.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabel("Defined")]
-        [PortLabelHidden]
-        public new ValueOutput isDefined { get; private set; }
-
-        protected override void Definition()
-        {
-            base.Definition();
-
-            isDefined = ValueOutput(nameof(isDefined), IsDefined);
-
-            Requirement(name, isDefined);
-        }
-
-        protected virtual bool IsDefined(Flow flow)
-        {
-            var name = flow.GetValue<string>(this.name);
-
-            return GetDeclarations(flow).IsDefined(name);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c1c70c2aa24799bb7cf9f073c3a86a31deb17712589660e1af7054058d4c7db3
+size 957

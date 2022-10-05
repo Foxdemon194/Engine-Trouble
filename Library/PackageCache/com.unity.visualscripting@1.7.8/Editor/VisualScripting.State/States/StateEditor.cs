@@ -1,12 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Editor(typeof(IState))]
-    public class StateEditor : GraphElementEditor<StateGraphContext>
-    {
-        public StateEditor(Metadata metadata) : base(metadata) { }
-
-        protected IState state => (IState)element;
-
-        protected new StateDescription description => (StateDescription)base.description;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34511eb0b268a56d80dc11ed27fb17099885e1274f3f91c15167b2b8a33ce42a
+size 356

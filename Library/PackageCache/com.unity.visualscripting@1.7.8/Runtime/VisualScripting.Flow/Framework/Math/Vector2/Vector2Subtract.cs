@@ -1,21 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the difference between two 2D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 2")]
-    [UnitTitle("Subtract")]
-    public sealed class Vector2Subtract : Subtract<Vector2>
-    {
-        protected override Vector2 defaultMinuend => Vector2.zero;
-
-        protected override Vector2 defaultSubtrahend => Vector2.zero;
-
-        public override Vector2 Operation(Vector2 a, Vector2 b)
-        {
-            return a - b;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bae3e6b7be3708b39ecc6f3b32a355010dfa75f4801163efc585bd99e69d143
+size 533

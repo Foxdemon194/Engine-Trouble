@@ -1,33 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public struct FontVariant
-    {
-        public readonly FontWeight weight;
-        public readonly FontStyle style;
-
-        public FontVariant(FontWeight weight, FontStyle style)
-        {
-            this.weight = weight;
-            this.style = style;
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (!(obj is FontVariant))
-            {
-                return false;
-            }
-
-            var other = (FontVariant)obj;
-
-            return weight == other.weight && style == other.style;
-        }
-
-        public override int GetHashCode()
-        {
-            return HashUtility.GetHashCode(weight, style);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:308791ae9cb0e383ed049f6a5fd0e27ef853b790527d8a3319effe42645285ff
+size 731

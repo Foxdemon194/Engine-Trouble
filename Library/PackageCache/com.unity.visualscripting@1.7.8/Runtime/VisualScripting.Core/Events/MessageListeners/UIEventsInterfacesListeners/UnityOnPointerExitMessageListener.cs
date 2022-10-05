@@ -1,11 +1,3 @@
-using UnityEngine.EventSystems;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    public sealed class UnityOnPointerExitMessageListener : MessageListener, IPointerExitHandler
-    {
-        public void OnPointerExit(PointerEventData eventData) =>
-            EventBus.Trigger(EventHooks.OnPointerExit, gameObject, eventData);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eaa3113de670951112217993115f315dbaef5027563cab7e11b78d8df271deea
+size 361

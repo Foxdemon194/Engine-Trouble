@@ -1,28 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(Literal))]
-    public class LiteralDescriptor : UnitDescriptor<Literal>
-    {
-        public LiteralDescriptor(Literal unit) : base(unit) { }
-
-        protected override string DefinedTitle()
-        {
-            return unit.type.DisplayName() + " Literal";
-        }
-
-        protected override string DefinedShortTitle()
-        {
-            return unit.type.DisplayName();
-        }
-
-        protected override string DefinedSummary()
-        {
-            return unit.type.Summary();
-        }
-
-        protected override EditorTexture DefinedIcon()
-        {
-            return unit.type.Icon();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ccf5aa3bf4e99ae871fea2ee1d9b59584d1301ea7902f33deea5e64d4cbcfca4
+size 678

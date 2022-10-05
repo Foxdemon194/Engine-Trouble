@@ -1,23 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public static class EditorTimeUtility
-    {
-        private static int _frameCount;
-
-        private static int frame => EditorApplication.isPlaying ? Time.frameCount : _frameCount;
-
-        private static float time => EditorApplication.isPlaying ? Time.realtimeSinceStartup : (float)EditorApplication.timeSinceStartup;
-
-        internal static void Initialize()
-        {
-            EditorApplication.update += () => _frameCount++;
-
-            EditorTimeBinding.frameBinding = () => frame;
-
-            EditorTimeBinding.timeBinding = () => time;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ec55f2c4ffcfe3a7e63eb66cdb7a4c929a69d27b99a3ff45e5b3dcdaf7eb387
+size 646

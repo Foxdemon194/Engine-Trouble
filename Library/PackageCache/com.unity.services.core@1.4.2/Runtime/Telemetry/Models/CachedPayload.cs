@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    [Serializable]
-    class CachedPayload<TPayload>
-        where TPayload : ITelemetryPayload
-    {
-        /// <summary>
-        /// Time, in ticks, the first event of this payload was recorded.
-        /// It uses <see cref="DateTime.UtcNow"/>.
-        /// </summary>
-        public long TimeOfOccurenceTicks;
-
-        public TPayload Payload;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f01e0e8b5668c53c81430290746086513abfdaf35707f133a0d6b280a4aa9aad
+size 422

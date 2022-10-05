@@ -1,14 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_ReorderableList : PluginAcknowledgement
-    {
-        public Acknowledgement_ReorderableList(Plugin plugin) : base(plugin) { }
-
-        public override string title => "Reorderable List";
-        public override string author => "Rotorz Limited";
-        public override string url => "https://bitbucket.org/rotorz/reorderable-list-editor-field-for-unity";
-        public override string licenseName => "MIT";
-        public override string licenseText => CommonLicenses.MIT;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1417256cfb39578da97c1c5a61fb6a6e140d5a8f6795ced25764cbc9fdb06a7f
+size 579

@@ -1,24 +1,3 @@
-using System;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    [Serializable]
-    struct Metric : ITelemetryEvent
-    {
-        [JsonProperty("name")]
-        public string Name;
-
-        [JsonProperty("value")]
-        public double Value;
-
-        [JsonProperty("type")]
-        [JsonConverter(typeof(StringEnumConverter))]
-        public MetricType Type;
-
-        [JsonProperty("tags")]
-        public IDictionary<string, string> Tags;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e83448bd7573347f0d9834c7cd0ea9552da8862389e9ac402ccde8fa919476b
+size 545

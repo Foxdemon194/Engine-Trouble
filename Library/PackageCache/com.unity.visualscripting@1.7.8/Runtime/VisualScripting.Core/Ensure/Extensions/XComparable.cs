@@ -1,22 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    internal static class XComparable
-    {
-        internal static bool IsLt<T>(this IComparable<T> x, T y)
-        {
-            return x.CompareTo(y) < 0;
-        }
-
-        internal static bool IsEq<T>(this IComparable<T> x, T y)
-        {
-            return x.CompareTo(y) == 0;
-        }
-
-        internal static bool IsGt<T>(this IComparable<T> x, T y)
-        {
-            return x.CompareTo(y) > 0;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:60c8eb2ff58bcfd61347c249ca158195805d130cecb06eb58e1b590cdce417b4
+size 476

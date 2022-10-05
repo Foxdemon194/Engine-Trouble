@@ -1,14 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public class UnexpectedEnumValueException<T> : Exception
-    {
-        public UnexpectedEnumValueException(T value) : base("Value " + value + " of enum " + typeof(T).Name + " is unexpected.")
-        {
-            Value = value;
-        }
-
-        public T Value { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:de3cc824ba8d99407d997cfe13d28cbc10df784847ab16e015cf41d3a217a050
+size 346

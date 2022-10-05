@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the distance between two 3D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 3")]
-    [UnitTitle("Distance")]
-    public sealed class Vector3Distance : Distance<UnityEngine.Vector3>
-    {
-        public override float Operation(UnityEngine.Vector3 a, UnityEngine.Vector3 b)
-        {
-            return UnityEngine.Vector3.Distance(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9dfde7a5ccafc9c8c5c09c4ac3a4ac6dda6a756d78b53a0659a5a3d548cccfdc
+size 435

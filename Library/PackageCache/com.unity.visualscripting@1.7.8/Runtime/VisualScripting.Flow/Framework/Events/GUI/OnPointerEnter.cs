@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the pointer enters the GUI element.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [UnitOrder(14)]
-    public sealed class OnPointerEnter : PointerEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnPointerEnterMessageListener);
-        protected override string hookName => EventHooks.OnPointerEnter;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:063f306f757e201f192e86efedc4956637dc8ccab9dbdaf9c5fdd3c6db2bd2ac
+size 436

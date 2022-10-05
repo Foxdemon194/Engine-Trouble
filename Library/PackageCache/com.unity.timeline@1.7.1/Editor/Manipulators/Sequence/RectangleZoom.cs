@@ -1,23 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.Timeline
-{
-    class RectangleZoom : RectangleTool
-    {
-        protected override bool enableAutoPan { get { return true; } }
-
-        protected override bool CanStartRectangle(Event evt)
-        {
-            return evt.button == 1 && evt.modifiers == (EventModifiers.Alt | EventModifiers.Shift);
-        }
-
-        protected override bool OnFinish(Event evt, WindowState state, Rect rect)
-        {
-            var x = state.PixelToTime(rect.xMin);
-            var y = state.PixelToTime(rect.xMax);
-            state.SetTimeAreaShownRange(x, y);
-
-            return true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b4b87e5f3bf1d96ab7904997797cc366eaa6cf8ac8bade1973b742768d3518d2
+size 636

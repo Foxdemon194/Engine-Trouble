@@ -1,16 +1,3 @@
-using System.Threading.Tasks;
-using Unity.Services.Core.Internal;
-
-namespace Unity.Services.Vivox.Internal
-{
-    /// <summary>
-    /// Provides utilities for performing simple Vivox actions or overriding the <see cref="IVivoxTokenProviderInternal"/> with a custom implementation.
-    /// </summary>
-    public interface IVivox : IServiceComponent
-    {
-        /// <summary>
-        /// Registers an <see cref="IVivoxTokenProviderInternal"/> that will be used as the primary token generator for all Vivox actions.
-        /// </summary>
-        void RegisterTokenProvider(IVivoxTokenProviderInternal tokenProvider);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:37dd7ce69805bf1472924dbe0b49237a030fae9d09339b49f6fc3bf2ebeecd7a
+size 624

@@ -1,17 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the product of two scalars.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Multiply")]
-    public sealed class ScalarMultiply : Multiply<float>
-    {
-        protected override float defaultB => 1;
-
-        public override float Operation(float a, float b)
-        {
-            return a * b;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:755ac07f4512a16af5fcdbe44582b879e9075c19e61803ac63524181ce227048
+size 401

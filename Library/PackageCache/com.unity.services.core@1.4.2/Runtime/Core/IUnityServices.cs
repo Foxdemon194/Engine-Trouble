@@ -1,13 +1,3 @@
-using System.Threading.Tasks;
-
-namespace Unity.Services.Core
-{
-    interface IUnityServices
-    {
-        ServicesInitializationState State { get; }
-
-        InitializationOptions Options { get; }
-
-        Task InitializeAsync(InitializationOptions options);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66d24fa2f732cf05c25bfff20209291f224430e1893eaab758b1fd1b53d2c61b
+size 267

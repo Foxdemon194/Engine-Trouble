@@ -1,35 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public enum AlignOperation
-    {
-        /// <summary>
-        /// Align the left edges of the selected elements.
-        /// </summary>
-        AlignLeftEdges,
-
-        /// <summary>
-        /// Align the horizontal centers of the selected elements.
-        /// </summary>
-        AlignCenters,
-
-        /// <summary>
-        /// Align the right edges of the selected elements.
-        /// </summary>
-        AlignRightEdges,
-
-        /// <summary>
-        /// Align the top edges of the selected elements.
-        /// </summary>
-        AlignTopEdges,
-
-        /// <summary>
-        /// Align the vertical middles of the selected elements.
-        /// </summary>
-        AlignMiddles,
-
-        /// <summary>
-        /// Align the bottom edges of the selected elements.
-        /// </summary>
-        AlignBottomEdges
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d4cab8f31926b632fbf24f25ac2cef64cbfea915a0b89f55437220198677381
+size 865

@@ -1,34 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(SelectOnFlow))]
-    public class SelectOnFlowDescriptor : UnitDescriptor<SelectOnFlow>
-    {
-        public SelectOnFlowDescriptor(SelectOnFlow unit) : base(unit) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            foreach (var branch in unit.branches)
-            {
-                if (port == branch.Key || port == branch.Value)
-                {
-                    var index = int.Parse(port.key.PartAfter('_'));
-
-                    var letter = ((char)('A' + index)).ToString();
-
-                    description.label = letter;
-
-                    if (port == branch.Key)
-                    {
-                        description.summary = $"Trigger to select the {letter} value.";
-                    }
-                    else if (port == branch.Value)
-                    {
-                        description.summary = $"The value to return if the {letter} control input is triggered.";
-                    }
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a80d542fc534314da7b401d5ebb0c2b5756eacfe0a07488e1cc378d2d10db31
+size 1145

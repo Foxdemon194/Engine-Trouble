@@ -1,33 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Threading;
-
-namespace Unity.VisualScripting
-{
-    public static class EditorLinqUtility
-    {
-        public static IEnumerable<T> Cancellable<T>(this IEnumerable<T> source, CancellationToken cancellation)
-        {
-            foreach (var item in source)
-            {
-                yield return item;
-                cancellation.ThrowIfCancellationRequested();
-            }
-        }
-
-        public static IEnumerable<T> Cancellable<T>(this IEnumerable<T> source, CancellationToken cancellation, Action cancel)
-        {
-            Ensure.That(nameof(cancel)).IsNotNull(cancel);
-
-            foreach (var item in source)
-            {
-                yield return item;
-
-                if (cancellation.IsCancellationRequested)
-                {
-                    cancel();
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d93386371451f17c4b839b5381aefbb1f6d0da03b15eabdd879dd4793882517d
+size 897

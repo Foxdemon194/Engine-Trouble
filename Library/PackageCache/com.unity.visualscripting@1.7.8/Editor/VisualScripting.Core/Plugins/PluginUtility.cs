@@ -1,18 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    public static class PluginUtility
-    {
-        public static IEnumerable<Plugin> OrderByDependencies(this IEnumerable<Plugin> plugins)
-        {
-            return plugins.OrderByDependencies(plugin => PluginContainer.pluginDependencies[plugin.id].Select(PluginContainer.GetPlugin));
-        }
-
-        public static IEnumerable<Plugin> ResolveDependencies(this IEnumerable<Plugin> plugins)
-        {
-            return plugins.Concat(plugins.SelectMany(plugin => plugin.dependencies)).Distinct().OrderByDependencies();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:011ccf0a28e380ec46df8b5b7c9d68d39474f4c3549467b1509f18bfee2998ac
+size 631

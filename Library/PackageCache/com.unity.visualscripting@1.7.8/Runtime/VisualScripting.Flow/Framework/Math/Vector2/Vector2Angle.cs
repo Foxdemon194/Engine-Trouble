@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the angle between two 2D vectors in degrees.
-    /// </summary>
-    [UnitCategory("Math/Vector 2")]
-    [UnitTitle("Angle")]
-    public sealed class Vector2Angle : Angle<UnityEngine.Vector2>
-    {
-        public override float Operation(UnityEngine.Vector2 a, UnityEngine.Vector2 b)
-        {
-            return UnityEngine.Vector2.Angle(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d36f8ac8327c0fc2b649a9f081bae4b8009a4ce19c049fc3b97674b03a9b9203
+size 431

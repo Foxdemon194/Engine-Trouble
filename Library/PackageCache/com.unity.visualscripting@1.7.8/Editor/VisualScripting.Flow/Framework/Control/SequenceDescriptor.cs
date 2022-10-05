@@ -1,23 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(Sequence))]
-    public class SequenceDescriptor : UnitDescriptor<Sequence>
-    {
-        public SequenceDescriptor(Sequence unit) : base(unit) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            if (port is ControlOutput)
-            {
-                var index = unit.multiOutputs.IndexOf((ControlOutput)port);
-
-                if (index >= 0)
-                {
-                    description.label = index.ToString();
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:44c34480c444d2ebdbe8d1d2ddfba7bb8727fa758f8e7dcfb46fb87bbc50bc09
+size 646

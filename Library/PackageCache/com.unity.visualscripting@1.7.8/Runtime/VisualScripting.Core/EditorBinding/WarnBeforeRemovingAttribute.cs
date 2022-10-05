@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class WarnBeforeRemovingAttribute : Attribute
-    {
-        public WarnBeforeRemovingAttribute(string warningTitle, string warningMessage)
-        {
-            this.warningTitle = warningTitle;
-            this.warningMessage = warningMessage;
-        }
-
-        public string warningTitle { get; }
-        public string warningMessage { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:341a848a8998271a50281c2210a4e1bfcfab4f2f1be6ef614411b30cf39c85c5
+size 535

@@ -1,18 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [GraphContext(typeof(FlowGraph))]
-    public class FlowGraphContext : GraphContext<FlowGraph, FlowCanvas>
-    {
-        public FlowGraphContext(GraphReference reference) : base(reference) { }
-
-        public override string windowTitle => "Script Graph";
-
-        protected override IEnumerable<ISidebarPanelContent> SidebarPanels()
-        {
-            yield return new GraphInspectorPanel(this);
-            yield return new VariablesPanel(this);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a452a5adef35ce13d6c50d48cc3c6865b9fe3e298ba5afb2b6f61104254f8415
+size 541

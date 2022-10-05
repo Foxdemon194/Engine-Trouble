@@ -1,23 +1,3 @@
-using UnityEditor;
-using UnityEditor.Build.Reporting;
-
-namespace Unity.VisualScripting.Analytics
-{
-    internal class OnPreprocessBuildAnalyticsEventHandler : UnityEditor.Build.IPreprocessBuildWithReport
-    {
-        public int callbackOrder => 0;
-
-        public void OnPreprocessBuild(BuildReport report)
-        {
-            if (!EditorAnalytics.enabled || !VSUsageUtility.isVisualScriptingUsed)
-                return;
-
-            OnPreprocessBuildAnalytics.Send(new OnPreprocessBuildAnalytics.Data()
-            {
-                guid = report.summary.guid.ToString(),
-                buildTarget = report.summary.platform,
-                buildTargetGroup = report.summary.platformGroup
-            });
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:650e735c414c69af266d2e8c435613ae14c076442eeae8f83023b57503af75f5
+size 730

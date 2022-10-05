@@ -1,21 +1,3 @@
-namespace Unity.Services.Core.Networking.Internal
-{
-    /// <summary>
-    /// Contract for objects containing all settings to customize the behaviour of a HTTP request sending.
-    /// </summary>
-    /// <remarks>
-    /// More options will be added based on common needs.
-    /// </remarks>
-    struct HttpOptions
-    {
-        /// <summary>
-        /// Delay, in seconds, after which the request will be considered a failure.
-        /// </summary>
-        public int RequestTimeoutInSeconds;
-
-        /// <summary>
-        /// Indicates the number of redirects the request can follow without failing.
-        /// </summary>
-        public int RedirectLimit;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae08b50fc749c692fae1067ba6625a8e2424f8f310791a7cff60005ce2087bd4
+size 668

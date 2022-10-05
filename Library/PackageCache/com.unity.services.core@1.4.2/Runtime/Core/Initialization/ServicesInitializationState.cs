@@ -1,21 +1,3 @@
-namespace Unity.Services.Core
-{
-    /// <summary>
-    /// Initialization state of Unity Services
-    /// </summary>
-    public enum ServicesInitializationState
-    {
-        /// <summary>
-        /// Initialization has not been started
-        /// </summary>
-        Uninitialized,
-        /// <summary>
-        /// Initialization in progress
-        /// </summary>
-        Initializing,
-        /// <summary>
-        /// Initialization has been successfully completed
-        /// </summary>
-        Initialized,
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0445c05119bf8bd1ddfb1a07686a5cd0b4915a55950805a37b6c90b4da3b7518
+size 521

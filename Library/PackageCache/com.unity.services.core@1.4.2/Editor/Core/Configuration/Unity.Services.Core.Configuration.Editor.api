@@ -1,22 +1,3 @@
-// This file is generated. Do not modify by hand.
-// XML documentation file not found. To check if public methods have XML comments,
-// make sure the XML doc file is present and located next to the scraped dll
-namespace Unity.Services.Core.Configuration.Editor
-{
-    public class ConfigurationBuilder
-    {
-        public Unity.Services.Core.Configuration.Editor.ConfigurationBuilder SetBool(string key, bool value, bool isReadOnly = False);
-        public Unity.Services.Core.Configuration.Editor.ConfigurationBuilder SetFloat(string key, float value, bool isReadOnly = False);
-        public Unity.Services.Core.Configuration.Editor.ConfigurationBuilder SetInt(string key, int value, bool isReadOnly = False);
-        public Unity.Services.Core.Configuration.Editor.ConfigurationBuilder SetString(string key, string value, bool isReadOnly = False);
-        public bool TryGetBool(string key, out bool value);
-        public bool TryGetFloat(string key, out float value);
-        public bool TryGetInt(string key, out int value);
-        public bool TryGetString(string key, out string value);
-    }
-
-    public interface IConfigurationProvider : UnityEditor.Build.IOrderedCallback
-    {
-        public abstract void OnBuildingConfiguration(Unity.Services.Core.Configuration.Editor.ConfigurationBuilder builder);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f34afd0c7924cdd1910d50156dd6f51b407ca63d39e655c66e22d91d1a4bf86b
+size 1322

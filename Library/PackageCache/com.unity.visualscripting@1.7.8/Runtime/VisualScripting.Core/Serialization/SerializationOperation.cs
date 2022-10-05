@@ -1,29 +1,3 @@
-using System.Collections.Generic;
-using Unity.VisualScripting.FullSerializer;
-using UnityObject = UnityEngine.Object;
-
-namespace Unity.VisualScripting
-{
-    public class SerializationOperation
-    {
-        public SerializationOperation()
-        {
-            objectReferences = new List<UnityObject>();
-            serializer = new fsSerializer();
-            serializer.AddConverter(new UnityObjectConverter());
-            serializer.AddConverter(new RayConverter());
-            serializer.AddConverter(new Ray2DConverter());
-            serializer.AddConverter(new NamespaceConverter());
-            serializer.AddConverter(new LooseAssemblyNameConverter());
-            serializer.Context.Set(objectReferences);
-        }
-
-        public fsSerializer serializer { get; private set; }
-        public List<UnityObject> objectReferences { get; private set; }
-
-        public void Reset()
-        {
-            objectReferences.Clear();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:664a5527848f758969f778e671fa6315c68f1a204fd07c5d30d137e37a8ba506
+size 958

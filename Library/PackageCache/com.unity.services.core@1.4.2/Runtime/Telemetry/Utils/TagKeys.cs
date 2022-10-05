@@ -1,33 +1,3 @@
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    static class TagKeys
-    {
-        public const string ApplicationInstallMode = "application_install_mode";
-
-        public const string OperatingSystem = "operating_system";
-
-        public const string Platform = "platform";
-
-        public const string UnityVersion = "unity_version";
-
-        public const string PackageName = "package_name";
-
-        public const string PackageVersion = "package_version";
-
-        public const string DiagnosticName = "name";
-
-        public const string DiagnosticMessage = "message";
-
-        public const string ApplicationVersion = "application_version";
-
-        public const string ProductName = "product_name";
-
-        public const string CloudProjectId = "cloud_project_id";
-
-        public const string EnvironmentName = "environment_name";
-
-        public const string ApplicationGenuine = "application_genuine";
-
-        public const string InternetReachability = "internet_reachability";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fbf9f5623433f027790f680ac99ddf9cace119cf88e2e872f27f14d49f740b1
+size 1004

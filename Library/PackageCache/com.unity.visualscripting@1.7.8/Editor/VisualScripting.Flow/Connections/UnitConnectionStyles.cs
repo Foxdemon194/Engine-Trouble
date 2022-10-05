@@ -1,19 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public static class UnitConnectionStyles
-    {
-        public static readonly Color activeColor = new Color(0.37f, 0.66f, 0.95f);
-
-        public static readonly Color highlightColor = new Color(1, 0.95f, 0f);
-
-        public static readonly Color invalidColor = new Color(1, 0, 0);
-
-        public static readonly Color disconnectColor = new Color(0.95f, 0.1f, 0.1f);
-
-        public static readonly float minBend = 15;
-
-        public static readonly float relativeBend = 1 / 4f;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c0e44800112e1fb0304d5504f8d6449ce46f75c32e6db880a277a16198f3b01
+size 548

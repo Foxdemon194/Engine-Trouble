@@ -1,13 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_Iconmonstr : PluginAcknowledgement
-    {
-        public Acknowledgement_Iconmonstr(Plugin plugin) : base(plugin) { }
-
-        public override string title => "Iconmonstr Icons";
-        public override string author => "Alexander Kahlkopf";
-        public override string url => "https://iconmonstr.com";
-        public override string licenseText => Licenses.Iconmonstr;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b820b552e23f8ad47c7e838e5a0095a95017d7724ed40c14ce03a48439a34ca
+size 475

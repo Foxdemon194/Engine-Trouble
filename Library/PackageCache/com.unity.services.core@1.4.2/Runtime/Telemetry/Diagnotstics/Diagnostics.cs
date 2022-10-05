@@ -1,34 +1,3 @@
-using System.Collections.Generic;
-using Unity.Services.Core.Internal;
-
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    class Diagnostics : IDiagnostics
-    {
-        internal DiagnosticsHandler Handler { get; }
-
-        internal IDictionary<string, string> PackageTags { get; }
-
-        public Diagnostics(DiagnosticsHandler handler, IDictionary<string, string> packageTags)
-        {
-            Handler = handler;
-            PackageTags = packageTags;
-        }
-
-        public void SendDiagnostic(string name, string message, IDictionary<string, string> tags = null)
-        {
-            var diagnostic = new Diagnostic
-            {
-                Content = tags is null
-                    ? new Dictionary<string, string>(PackageTags)
-                    : new Dictionary<string, string>(tags)
-                        .MergeAllowOverride(PackageTags),
-            };
-
-            diagnostic.Content.Add(TagKeys.DiagnosticName, name);
-            diagnostic.Content.Add(TagKeys.DiagnosticMessage, message);
-
-            Handler.Register(diagnostic);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a5934d216522c05cab76c2d52139e6fba80983d991a63ab2386b4ec31b698a8
+size 1083

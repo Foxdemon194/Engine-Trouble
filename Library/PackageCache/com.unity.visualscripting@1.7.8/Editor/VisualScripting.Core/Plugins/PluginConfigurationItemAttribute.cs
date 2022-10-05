@@ -1,25 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public abstract class PluginConfigurationItemAttribute : Attribute
-    {
-        protected PluginConfigurationItemAttribute() { }
-
-        protected PluginConfigurationItemAttribute(string key)
-        {
-            this.key = key;
-        }
-
-        public string key { get; }
-
-        public bool visible { get; set; } = true;
-        public bool enabled { get; set; } = true;
-        public bool resettable { get; set; } = true;
-
-        public string visibleCondition { get; set; } = null;
-        public string enabledCondition { get; set; } = null;
-        public string resettableCondition { get; set; } = null;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:54b58136f77fd81acd93844f13a1b80549f417f87062affb7a5175c9b9212a1b
+size 794

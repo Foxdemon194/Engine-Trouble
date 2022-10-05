@@ -1,35 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Triggers the transition in the parent state graph.
-    /// </summary>
-    [UnitSurtitle("State")]
-    [UnitCategory("Nesting")]
-    [UnitShortTitle("Trigger Transition")]
-    [TypeIcon(typeof(IStateTransition))]
-    public sealed class TriggerStateTransition : Unit
-    {
-        /// <summary>
-        /// The moment at which the parent state transition should be triggered.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ControlInput trigger { get; private set; }
-
-        protected override void Definition()
-        {
-            trigger = ControlInput(nameof(trigger), Trigger);
-        }
-
-        private ControlOutput Trigger(Flow flow)
-        {
-            var stateTransition = flow.stack.GetParent<INesterStateTransition>();
-
-            flow.stack.ExitParentElement();
-
-            stateTransition.Branch(flow);
-
-            return null;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:98193ab03d3b0d6b03024fef683be91abbfb63aaea3eaf08deeb1204c3c322ed
+size 969

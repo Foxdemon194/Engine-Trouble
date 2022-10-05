@@ -1,17 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the framerate-normalized value of a 2D vector.
-    /// </summary>
-    [UnitCategory("Math/Vector 2")]
-    [UnitTitle("Per Second")]
-    public sealed class Vector2PerSecond : PerSecond<Vector2>
-    {
-        public override Vector2 Operation(Vector2 input)
-        {
-            return input * Time.deltaTime;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0373cf577cd47df7090e57405f8a5a52639a6458cf48e1f73d9a29f4a9010723
+size 416

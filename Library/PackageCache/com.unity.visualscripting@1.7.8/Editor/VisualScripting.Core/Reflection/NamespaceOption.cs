@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(Namespace))]
-    public class NamespaceOption : FuzzyOption<Namespace>
-    {
-        public NamespaceOption(Namespace @namespace)
-        {
-            value = @namespace;
-            label = @namespace.DisplayName(false);
-            UnityAPI.Async(() => icon = @namespace.Icon());
-        }
-
-        public NamespaceOption(Namespace @namespace, bool parentOnly) : this(@namespace)
-        {
-            this.parentOnly = parentOnly;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f73db6e0224a6b7369c097a4ae3c309bc21c7f18daf094089ec57935de073952
+size 511

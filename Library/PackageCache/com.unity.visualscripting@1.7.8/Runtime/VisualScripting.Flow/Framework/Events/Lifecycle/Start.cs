@@ -1,13 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called the first time a machine is enabled before any update method.
-    /// </summary>
-    [UnitCategory("Events/Lifecycle")]
-    [UnitOrder(2)]
-    [UnitTitle("On Start")]
-    public sealed class Start : MachineEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => EventHooks.Start;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9fbeb4f63cb57e09afdc8f9a83592dcb3374004be95c14041955c73c2a1a459
+size 377

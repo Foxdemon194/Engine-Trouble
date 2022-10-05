@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the cancel button is pressed.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [UnitOrder(25)]
-    public sealed class OnCancel : GenericGuiEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnCancelMessageListener);
-        protected override string hookName => EventHooks.OnCancel;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3f8ec8514bb1432816e5ba4028d8785f17e832deca4760eb71f1f290d9cda0b
+size 415

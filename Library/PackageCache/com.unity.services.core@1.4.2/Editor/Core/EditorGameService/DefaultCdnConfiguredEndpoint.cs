@@ -1,36 +1,3 @@
-using System;
-using System.Diagnostics.CodeAnalysis;
-using Newtonsoft.Json;
-using UnityEngine;
-
-namespace Unity.Services.Core.Editor
-{
-    class DefaultCdnConfiguredEndpoint : CdnConfiguredEndpoint<DefaultCdnEndpointConfiguration> {}
-
-    [Serializable]
-    class DefaultCdnEndpointConfiguration
-    {
-        [JsonProperty("core")]
-        public string Core { get; private set; }
-
-        internal string BuildApiUrl()
-        {
-            return Core + "/api";
-        }
-
-        internal string BuildProjectsApiUrl(string organizationKey)
-        {
-            return string.Format(BuildApiUrl() + "/orgs/{0}/projects", organizationKey);
-        }
-
-        internal string BuildProjectApiUrl(string organizationKey, string projectId)
-        {
-            return string.Format(BuildProjectsApiUrl(organizationKey) + "/{0}", projectId);
-        }
-
-        internal string BuildUsersUrl(string organizationKey, string projectId)
-        {
-            return BuildProjectApiUrl(organizationKey, projectId) + "/users";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bc2d7e047d5adcca74df1aa9a0c24da95360080685b81a8f3ba6f6d7c80f8401
+size 1038

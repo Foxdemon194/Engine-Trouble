@@ -1,27 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
-    public sealed class InspectorTextAreaAttribute : Attribute
-    {
-        private float? _minLines;
-        private float? _maxLines;
-
-        public float minLines
-        {
-            get => _minLines.GetValueOrDefault();
-            set => _minLines = value;
-        }
-
-        public bool hasMinLines => _minLines.HasValue;
-
-        public float maxLines
-        {
-            get => _maxLines.GetValueOrDefault();
-            set => _maxLines = value;
-        }
-
-        public bool hasMaxLines => _maxLines.HasValue;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6e6abe27100c1deac81dd3673eacfa0e72223e829eb3f57a43e19e27d5bb24fb
+size 727

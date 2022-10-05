@@ -1,16 +1,3 @@
-using Unity.Services.Core.Internal;
-
-namespace Unity.Services.Core.Configuration.Internal
-{
-    /// <summary>
-    /// Component to provide cloud project ID.
-    /// </summary>
-    public interface ICloudProjectId : IServiceComponent
-    {
-        /// <summary>
-        /// Get cloud project ID at runtime.
-        /// </summary>
-        /// <returns>cloud project id</returns>
-        string GetCloudProjectId();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:67663ce0262b89301210248239285837fd048ddfa172aa7e25aaf060bb5db005
+size 421

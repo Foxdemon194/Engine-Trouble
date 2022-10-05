@@ -1,29 +1,3 @@
-namespace Unity.Services.Core.Internal
-{
-    /// <summary>
-    /// All supported status of an <see cref="IAsyncOperation"/>.
-    /// </summary>
-    enum AsyncOperationStatus
-    {
-        /// <summary>
-        /// The operation status hasn't been defined yet.
-        /// </summary>
-        None,
-        /// <summary>
-        /// The operation is running.
-        /// </summary>
-        InProgress,
-        /// <summary>
-        /// The operation is completed without any errors.
-        /// </summary>
-        Succeeded,
-        /// <summary>
-        /// The operation is completed with errors.
-        /// </summary>
-        Failed,
-        /// <summary>
-        /// The operation has been canceled.
-        /// </summary>
-        Cancelled
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:95b3bbab350c57e1dec5acbc578e7085e8ceba385513f0d886ae9b777aab2d44
+size 752

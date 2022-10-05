@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltFlow.ID)]
-    internal class Changelog_1_4_5 : PluginChangelog
-    {
-        public Changelog_1_4_5(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.5";
-
-        public override DateTime date => new DateTime(2019, 07, 15);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Unity crash due to Mono runtime vtable issue with type unification";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee44b293a372e6a42e820ae25c0ea0cb21f63c6386b7c2104a9b7ea9b81bdc87
+size 596

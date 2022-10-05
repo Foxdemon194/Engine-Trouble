@@ -1,35 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.Services.Core.Networking.Internal
-{
-    /// <summary>
-    /// Read-only handle to a <see cref="HttpRequest"/>.
-    /// </summary>
-    struct ReadOnlyHttpRequest
-    {
-        HttpRequest m_Request;
-
-        /// <summary>
-        /// Create a read-only handle to the given <paramref name="request"/>.
-        /// </summary>
-        /// <param name="request">
-        /// The request to create the read-only handle for.
-        /// </param>
-        public ReadOnlyHttpRequest(HttpRequest request)
-        {
-            m_Request = request;
-        }
-
-        /// <inheritdoc cref="HttpRequest.Method"/>
-        public string Method => m_Request.Method;
-
-        /// <inheritdoc cref="HttpRequest.Url"/>
-        public string Url => m_Request.Url;
-
-        /// <inheritdoc cref="HttpRequest.Headers"/>
-        public IReadOnlyDictionary<string, string> Headers => m_Request.Headers;
-
-        /// <inheritdoc cref="HttpRequest.Body"/>
-        public byte[] Body => m_Request.Body;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:af05d07cead0adbb283937fa757fd406a7604803d94492b89868c332cfdfb9af
+size 1036

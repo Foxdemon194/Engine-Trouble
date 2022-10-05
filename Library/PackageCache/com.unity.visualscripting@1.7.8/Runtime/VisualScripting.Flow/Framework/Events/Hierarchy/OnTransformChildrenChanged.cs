@@ -1,14 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the list of children of the transform of the game object has changed.
-    /// </summary>
-    [UnitCategory("Events/Hierarchy")]
-    public sealed class OnTransformChildrenChanged : GameObjectEventUnit<EmptyEventArgs>
-    {
-        public override Type MessageListenerType => typeof(UnityOnTransformChildrenChangedMessageListener);
-        protected override string hookName => EventHooks.OnTransformChildrenChanged;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7125ad91edda79c030b4ab6ca070d92b9c0ce70ab666c8ef8ff67af831dc67f2
+size 511

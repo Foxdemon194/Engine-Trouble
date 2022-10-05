@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqGraphsChangelog_1_4_6 : PluginChangelog
-    {
-        public LudiqGraphsChangelog_1_4_6(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.6";
-
-        public override DateTime date => new DateTime(2019, 08, 20);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Crash when instantiating recursive graphs";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd04ed21c1e8904af88cb97b24c895d11caaeb80bdd3a73cd82875b08068e6c8
+size 593

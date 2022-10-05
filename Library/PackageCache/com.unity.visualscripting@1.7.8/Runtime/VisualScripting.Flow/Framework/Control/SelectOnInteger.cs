@@ -1,14 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Selects a value from a set by switching over an integer.
-    /// </summary>
-    [UnitCategory("Control")]
-    [UnitTitle("Select On Integer")]
-    [UnitShortTitle("Select")]
-    [UnitSubtitle("On Integer")]
-    [UnitOrder(8)]
-    public class SelectOnInteger : SelectUnit<int>
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4765c8790806d0ce5eee43aa85ebebc5b0921d4291bf046c7ed7e129d3aeecb4
+size 351

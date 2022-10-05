@@ -1,13 +1,3 @@
-using System;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    [Serializable]
-    struct Diagnostic : ITelemetryEvent
-    {
-        [JsonProperty("content")]
-        public IDictionary<string, string> Content;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ca18f018deda716e0aede56f310b40acb1e5ac356d9f7a9b37e3d03336b16584
+size 282

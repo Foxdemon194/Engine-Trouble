@@ -1,26 +1,3 @@
-using System;
-using System.IO;
-using System.Linq;
-using System.Text;
-using UnityEditor;
-
-namespace Unity.VisualScripting
-{
-    public abstract class PluginAcknowledgement : IPluginLinked
-    {
-        protected PluginAcknowledgement(Plugin plugin)
-        {
-            this.plugin = plugin;
-        }
-
-        public Plugin plugin { get; }
-
-        public abstract string title { get; }
-        public abstract string author { get; }
-
-        public virtual int? copyrightYear => null;
-        public virtual string url => null;
-        public virtual string licenseName => null;
-        public virtual string licenseText => null;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:98a0cc380c1950ddfc3d0f6e38dba42efc790aa83fa1017392d0986ff3678be5
+size 640

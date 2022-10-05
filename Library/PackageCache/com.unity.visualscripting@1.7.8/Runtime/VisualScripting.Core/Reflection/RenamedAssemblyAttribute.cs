@@ -1,20 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    // Allows us to migrate old serialized namespaces to new ones
-    // Ex usage: [assembly: RenamedAssembly("Bolt.Core", "Unity.VisualScripting.Core")]
-    [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
-    public sealed class RenamedAssemblyAttribute : Attribute
-    {
-        public RenamedAssemblyAttribute(string previousName, string newName)
-        {
-            this.previousName = previousName;
-            this.newName = newName;
-        }
-
-        public string previousName { get; }
-
-        public string newName { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3be8911aec0219f29402d4bd8097f59bd743a1dfdc2a1870b4f6752fddc92736
+size 612

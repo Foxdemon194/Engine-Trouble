@@ -1,25 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public class UnknownEditor : Inspector
-    {
-        public UnknownEditor(Metadata metadata) : base(metadata) { }
-
-        private string message => $"No inspector for '{metadata.definedType.DisplayName()}'.";
-
-        protected override void OnGUI(Rect position, GUIContent label)
-        {
-            position.height -= EditorGUIUtility.standardVerticalSpacing;
-            EditorGUI.HelpBox(position, message, MessageType.Warning);
-        }
-
-        protected override float GetHeight(float width, GUIContent label)
-        {
-            var height = LudiqGUIUtility.GetHelpBoxHeight(message, MessageType.Warning, width);
-            height += EditorGUIUtility.standardVerticalSpacing;
-            return height;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c107f30f897760e8cee4e7d17c78c82b079ee286487dbc29bd0a29a969c178f2
+size 813

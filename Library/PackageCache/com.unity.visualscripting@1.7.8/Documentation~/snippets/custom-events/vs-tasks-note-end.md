@@ -1,5 +1,3 @@
----
-title: tasks-note-end
----
-
-The examples below are based on the previous example to create a Custom Scripting Event node. For more information, see [Create a Custom Scripting Event node](../../vs-create-own-custom-event-node.md)
+version https://git-lfs.github.com/spec/v1
+oid sha256:b755925d252e30b563698fe53c429a393fad4209b3481a114e61efb73f6d275f
+size 231

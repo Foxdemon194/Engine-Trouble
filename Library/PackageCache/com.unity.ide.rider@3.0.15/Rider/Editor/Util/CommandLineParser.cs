@@ -1,36 +1,3 @@
-using System.Collections.Generic;
-
-namespace Packages.Rider.Editor.Util
-{
-  internal class CommandLineParser
-  {
-    public Dictionary<string, string> Options = new Dictionary<string, string>();
-    
-    public CommandLineParser(string[] args)
-    {
-      var i = 0;
-      while (i < args.Length)
-      {
-        var arg = args[i];
-        if (!arg.StartsWith("-"))
-        {
-          i++;
-          continue;
-        }
-
-        string value = null;
-        if (i + 1 < args.Length && !args[i + 1].StartsWith("-"))
-        {
-          value = args[i + 1];
-          i++;
-        }
-
-        if (!(Options.ContainsKey(arg)))
-        {
-          Options.Add(arg, value);
-        }
-        i++;
-      }
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:823acfe52fed17ba290584ced2002099f213c6d7046ad575cbb7d517478242d3
+size 711

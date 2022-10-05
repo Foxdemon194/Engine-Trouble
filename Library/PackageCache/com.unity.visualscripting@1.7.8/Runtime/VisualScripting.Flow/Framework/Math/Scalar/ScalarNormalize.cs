@@ -1,22 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the node length version of a scalar.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Normalize")]
-    public sealed class ScalarNormalize : Normalize<float>
-    {
-        public override float Operation(float input)
-        {
-            if (input == 0)
-            {
-                return 0;
-            }
-
-            return input / Mathf.Abs(input);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:68c220fea792aa1f61024e6379b5a7252d8f425dc4b4ead17445d9902e037252
+size 481

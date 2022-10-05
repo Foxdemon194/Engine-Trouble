@@ -1,18 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Widget(typeof(InvalidInput))]
-    public class InvalidInputWidget : UnitInputPortWidget<InvalidInput>
-    {
-        public InvalidInputWidget(FlowCanvas canvas, InvalidInput port) : base(canvas, port) { }
-
-        protected override Texture handleTextureConnected => BoltFlow.Icons.invalidPortConnected?[12];
-
-        protected override Texture handleTextureUnconnected => BoltFlow.Icons.invalidPortUnconnected?[12];
-
-        protected override bool colorIfActive => false;
-
-        protected override bool canStartConnection => false;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:109111adf0c51fcee2daee54bec726e54c698324412b290772d9e3d1dd1ea2fa
+size 603

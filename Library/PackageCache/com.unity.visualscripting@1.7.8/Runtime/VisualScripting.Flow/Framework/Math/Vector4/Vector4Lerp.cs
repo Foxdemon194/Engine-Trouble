@@ -1,21 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the linear interpolation between two 4D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 4")]
-    [UnitTitle("Lerp")]
-    public sealed class Vector4Lerp : Lerp<Vector4>
-    {
-        protected override Vector4 defaultA => Vector4.zero;
-
-        protected override Vector4 defaultB => Vector4.one;
-
-        public override Vector4 Operation(Vector4 a, Vector4 b, float t)
-        {
-            return Vector4.Lerp(a, b, t);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a3c027e16ee6e35de4578fc88b45ac0d6b003bfa8cd21e3154f22232b77b829
+size 540

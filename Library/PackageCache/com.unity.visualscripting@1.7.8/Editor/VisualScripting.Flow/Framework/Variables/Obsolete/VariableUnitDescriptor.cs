@@ -1,24 +1,3 @@
-#pragma warning disable 618
-
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(VariableUnit))]
-    public class VariableUnitDescriptor<TVariableUnit> : UnitDescriptor<TVariableUnit> where TVariableUnit : VariableUnit
-    {
-        public VariableUnitDescriptor(TVariableUnit unit) : base(unit) { }
-
-        protected bool hasDefaultName => !string.IsNullOrEmpty(unit.defaultName);
-
-        protected override string DefinedSummary()
-        {
-            var summary = base.DefinedSummary();
-
-            if (hasDefaultName)
-            {
-                summary += $" (\"{unit.defaultName}\")";
-            }
-
-            return summary;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2eb2f4476ff27358a7011cb67bed80dc257d49ff5f4d52d6c24dda45312175c
+size 664

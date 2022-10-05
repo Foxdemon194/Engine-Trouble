@@ -1,34 +1,3 @@
-using System;
-using Unity.VisualScripting.FullSerializer;
-
-namespace Unity.VisualScripting
-{
-    public class LooseAssemblyNameConverter : fsDirectConverter
-    {
-        public override Type ModelType => typeof(LooseAssemblyName);
-
-        public override object CreateInstance(fsData data, Type storageType)
-        {
-            return new object();
-        }
-
-        public override fsResult TrySerialize(object instance, out fsData serialized, Type storageType)
-        {
-            serialized = new fsData(((LooseAssemblyName)instance).name);
-
-            return fsResult.Success;
-        }
-
-        public override fsResult TryDeserialize(fsData data, ref object instance, Type storageType)
-        {
-            if (!data.IsString)
-            {
-                return fsResult.Fail("Expected string in " + data);
-            }
-
-            instance = new LooseAssemblyName(data.AsString);
-
-            return fsResult.Success;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:13d233b17b33fce9cb778e3051759ce5bcf1dd2852ff0373bf0b1e62a45c00cc
+size 956

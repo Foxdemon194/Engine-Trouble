@@ -1,21 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Moves a scalar towards a target.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Move Towards")]
-    public sealed class ScalarMoveTowards : MoveTowards<float>
-    {
-        protected override float defaultCurrent => 0;
-
-        protected override float defaultTarget => 1;
-
-        public override float Operation(float current, float target, float maxDelta)
-        {
-            return Mathf.MoveTowards(current, target, maxDelta);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:98946835d470a20a51c8b7e370367262d0e816d04623450a7ad0825035823720
+size 554

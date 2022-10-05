@@ -1,5 +1,3 @@
-com.unity.visualscripting copyright © 2020 Unity Technologies
-
-Licensed under the Unity Package Distribution License (see https://unity3d.com/legal/licenses/Unity_Package_Distribution_License ).
-
-Unless expressly provided otherwise, the software under this license is made available strictly on an “AS IS” BASIS WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. Please review the license for details on these and other terms and conditions.
+version https://git-lfs.github.com/spec/v1
+oid sha256:38110f8f09a9b7828467d10ba992c3ffb8e3819feb23bd37d8bd342cc78a478f
+size 446

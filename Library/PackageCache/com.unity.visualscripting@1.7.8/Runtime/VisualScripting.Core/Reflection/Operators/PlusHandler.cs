@@ -1,20 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public sealed class PlusHandler : UnaryOperatorHandler
-    {
-        public PlusHandler() : base("Plus", "Plus", "+", "op_UnaryPlus")
-        {
-            Handle<byte>(a => +a);
-            Handle<sbyte>(a => +a);
-            Handle<short>(a => +a);
-            Handle<ushort>(a => +a);
-            Handle<int>(a => +a);
-            Handle<uint>(a => +a);
-            Handle<long>(a => +a);
-            Handle<ulong>(a => +a);
-            Handle<float>(a => +a);
-            Handle<decimal>(a => +a);
-            Handle<double>(a => +a);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bab8ec2b5a51456564436c2b4904efc3237fe7eb60bc4af1c1549f29873d861f
+size 595

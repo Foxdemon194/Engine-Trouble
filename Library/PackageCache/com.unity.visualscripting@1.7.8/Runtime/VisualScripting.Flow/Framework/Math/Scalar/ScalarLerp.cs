@@ -1,21 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the linear interpolation between two scalars.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Lerp")]
-    public sealed class ScalarLerp : Lerp<float>
-    {
-        protected override float defaultA => 0;
-
-        protected override float defaultB => 1;
-
-        public override float Operation(float a, float b, float t)
-        {
-            return Mathf.Lerp(a, b, t);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b74e8b57799492bea57332850e7d7e51764d2b7bfb87814f1f015f53bc68405
+size 499

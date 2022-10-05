@@ -1,10 +1,3 @@
-using System.Reflection;
-using System.Runtime.CompilerServices;
-
-[assembly: AssemblyTitle("Unity.Rider.Editor")]
-[assembly: InternalsVisibleTo("Unity.Rider.EditorTests")]
-[assembly: InternalsVisibleTo("Unity.PackageValidationSuite.Editor")]
-[assembly: InternalsVisibleTo("Assembly-CSharp-Editor")]
-[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
-
-[assembly: AssemblyVersion("3.0.7")]
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7b3b955f455d705645ebffd890ca6dbb67a07c76aceb9c51f00cd3e9abf959b
+size 395

@@ -1,27 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [SerializationVersion("A")]
-    public sealed class GraphGroup : GraphElement<IGraph>
-    {
-        [DoNotSerialize]
-        public static readonly Color defaultColor = new Color(0, 0, 0);
-
-        public GraphGroup() : base() { }
-
-        [Serialize]
-        public Rect position { get; set; }
-
-        [Serialize]
-        public string label { get; set; } = "Group";
-
-        [Serialize]
-        [InspectorTextArea(minLines = 1, maxLines = 10)]
-        public string comment { get; set; }
-
-        [Serialize]
-        [Inspectable]
-        public Color color { get; set; } = defaultColor;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c12eb9629b9415e1069e1bb3930b4354bf765399714849929ac891088f7fcb83
+size 657

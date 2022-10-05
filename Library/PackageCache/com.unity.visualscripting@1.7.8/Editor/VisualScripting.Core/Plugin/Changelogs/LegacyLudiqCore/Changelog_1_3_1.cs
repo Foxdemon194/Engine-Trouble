@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqCoreChangelog_1_3_1 : PluginChangelog
-    {
-        public LudiqCoreChangelog_1_3_1(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.3.1";
-        public override DateTime date => new DateTime(2018, 05, 02);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Prefabs not affected by ScriptReferenceResolver";
-                yield return "[Fixed] List inspector not drawing on Unity 2018.2+";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:43c9556f694c5801f1b3df251b54b315df9824a96f96519ab37e7121481f21c8
+size 678

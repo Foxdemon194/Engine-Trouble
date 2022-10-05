@@ -1,15 +1,3 @@
-using System.Reflection;
-
-namespace Unity.VisualScripting
-{
-    [AotStubWriter(typeof(PropertyInfo))]
-    public class PropertyInfoStubWriter : AccessorInfoStubWriter<PropertyInfo>
-    {
-        public PropertyInfoStubWriter(PropertyInfo propertyInfo) : base(propertyInfo) { }
-
-        protected override IOptimizedAccessor GetOptimizedAccessor(PropertyInfo propertyInfo)
-        {
-            return propertyInfo.Prewarm();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:718e05b5b872a143dbe4c851c72dcf82bcf234b943a209563a66ca8daa329cac
+size 443

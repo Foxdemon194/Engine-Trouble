@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    /// <summary>
-    /// Called once per frame for every collider that is touching the trigger.
-    /// </summary>
-    public sealed class OnTriggerStay : TriggerEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnTriggerStayMessageListener);
-        protected override string hookName => EventHooks.OnTriggerStay;
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1161d204556ab52c5118e974787ee7265492fc7e993a29b9250096e40b04c82
+size 436

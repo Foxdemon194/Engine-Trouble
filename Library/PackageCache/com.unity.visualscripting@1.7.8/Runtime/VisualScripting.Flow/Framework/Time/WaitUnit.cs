@@ -1,31 +1,3 @@
-using System.Collections;
-
-namespace Unity.VisualScripting
-{
-    [UnitCategory("Time")]
-    public abstract class WaitUnit : Unit
-    {
-        /// <summary>
-        /// The moment at which to start the delay.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ControlInput enter { get; private set; }
-
-        /// <summary>
-        /// The action to execute after the delay has elapsed.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ControlOutput exit { get; private set; }
-
-        protected override void Definition()
-        {
-            enter = ControlInputCoroutine(nameof(enter), Await);
-            exit = ControlOutput(nameof(exit));
-            Succession(enter, exit);
-        }
-
-        protected abstract IEnumerator Await(Flow flow);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6f851216c7ed054641ec7778525f24482c1a8110f8db24fe42890f6bb5da8c0f
+size 838

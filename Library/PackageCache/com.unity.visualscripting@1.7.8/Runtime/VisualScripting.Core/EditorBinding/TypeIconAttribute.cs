@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Interface, AllowMultiple = false, Inherited = true)]
-    public sealed class TypeIconAttribute : Attribute
-    {
-        public TypeIconAttribute(Type type)
-        {
-            Ensure.That(nameof(type)).IsNotNull(type);
-
-            this.type = type;
-        }
-
-        public Type type { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fd81875012fabac2a60368efe88af7196effee36e816eb102ed4d680c4d1f84
+size 443

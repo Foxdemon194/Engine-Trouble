@@ -1,15 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_2D_EXISTS
-    [AddComponentMenu("")]
-    public sealed class UnityOnCollisionStay2DMessageListener : MessageListener
-    {
-        private void OnCollisionStay2D(Collision2D collision)
-        {
-            EventBus.Trigger(EventHooks.OnCollisionStay2D, gameObject, collision);
-        }
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1adacd7b16601049aaef682374072bc747f5311ef61b3a5fdb3b5d3a155e044
+size 376

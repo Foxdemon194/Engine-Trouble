@@ -1,15 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    [AddComponentMenu("")]
-    public sealed class UnityOnCollisionEnterMessageListener : MessageListener
-    {
-        private void OnCollisionEnter(Collision collision)
-        {
-            EventBus.Trigger(EventHooks.OnCollisionEnter, gameObject, collision);
-        }
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:27e74fe9bb43f4b00d673cadbde8e26f152c31309fdd5b6db5a08b8ea3bf1691
+size 368

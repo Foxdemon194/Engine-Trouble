@@ -1,22 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Editor(typeof(DictionaryAsset))]
-    public sealed class DictionaryAssetEditor : Inspector
-    {
-        public DictionaryAssetEditor(Metadata metadata) : base(metadata) { }
-
-        private Metadata dictionaryMetadata => metadata[nameof(DictionaryAsset.dictionary)];
-
-        protected override float GetHeight(float width, GUIContent label)
-        {
-            return LudiqGUI.GetInspectorHeight(this, dictionaryMetadata, width, GUIContent.none);
-        }
-
-        protected override void OnGUI(Rect position, GUIContent label)
-        {
-            LudiqGUI.Inspector(dictionaryMetadata, position, GUIContent.none);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:35757a87a72ae7e739cdad940931287cab060f763374b64e1488bf11d411e7f8
+size 699

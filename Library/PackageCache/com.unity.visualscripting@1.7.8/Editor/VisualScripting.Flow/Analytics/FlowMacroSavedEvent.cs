@@ -1,21 +1,3 @@
-using UnityEditor;
-
-namespace Unity.VisualScripting.Analytics
-{
-    class FlowMacroSavedEvent : UnityEditor.AssetModificationProcessor
-    {
-        static string[] OnWillSaveAssets(string[] paths)
-        {
-            foreach (string path in paths)
-            {
-                var assetType = AssetDatabase.GetMainAssetTypeAtPath(path);
-                if (assetType == typeof(ScriptGraphAsset))
-                {
-                    UsageAnalytics.CollectAndSend();
-                    break;
-                }
-            }
-            return paths;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a0c033fe10e190f50a2c1b08fb855aef1fcfe7be48eabb0093a07b303aa7cf19
+size 574

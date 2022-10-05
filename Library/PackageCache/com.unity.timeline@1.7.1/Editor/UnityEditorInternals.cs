@@ -1,25 +1,3 @@
-using System;
-using UnityEngine;
-using Object = UnityEngine.Object;
-
-namespace UnityEditor.Timeline
-{
-    static class UnityEditorInternals
-    {
-        static readonly EditorGUI.ObjectFieldValidator k_AllowAllObjectsValidator = (references, type, property, options) => references.Length > 0 ? references[0] : null;
-
-        public static Object DoObjectField(Rect position, Object obj, Type type, int controlId, bool allowScene, bool allowAllObjects = false)
-        {
-            EditorGUI.ObjectFieldValidator validator = null;
-            if (allowAllObjects)
-                validator = k_AllowAllObjectsValidator;
-
-#if UNITY_2020_1_OR_NEWER
-            var newObject = EditorGUI.DoObjectField(position, position, controlId, obj, null, type, validator, allowScene, EditorStyles.objectField);
-#else
-            var newObject = EditorGUI.DoObjectField(position, position, controlId, obj, type, null, validator, allowScene, EditorStyles.objectField);
-#endif
-            return newObject;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e561dcbc1fd1042a070478e41df3f2f4840b739f137bee484e14f1883aee15f
+size 1009

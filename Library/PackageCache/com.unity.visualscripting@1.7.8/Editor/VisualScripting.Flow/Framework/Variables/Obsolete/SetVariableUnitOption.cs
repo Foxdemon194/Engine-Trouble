@@ -1,20 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(SetVariableUnit))]
-    public class SetVariableUnitOption<TVariableUnit> : VariableUnitOption<TVariableUnit> where TVariableUnit : SetVariableUnit
-    {
-        public SetVariableUnitOption() : base() { }
-
-        public SetVariableUnitOption(TVariableUnit unit) : base(unit) { }
-
-        public override string Kind()
-        {
-            return base.Kind().TrimStart("Set ");
-        }
-
-        protected override string DefaultNameLabel()
-        {
-            return $"Set {unit.defaultName}";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:606ed8e7274fcfe165804c852d474493dba8388a80b815fcdc4d5c75c233dff5
+size 575

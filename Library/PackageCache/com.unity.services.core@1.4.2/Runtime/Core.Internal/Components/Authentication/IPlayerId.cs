@@ -1,21 +1,3 @@
-using System;
-using Unity.Services.Core.Internal;
-
-namespace Unity.Services.Authentication.Internal
-{
-    /// <summary>
-    /// Contract for objects providing information with the player identification (PlayerID) for currently signed in player.
-    /// </summary>
-    public interface IPlayerId : IServiceComponent
-    {
-        /// <summary>
-        /// The ID of the player.
-        /// </summary>
-        string PlayerId { get; }
-
-        /// <summary>
-        /// Event raised when the player id changed.
-        /// </summary>
-        event Action<string> PlayerIdChanged;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9efb1d1154b01f50b4ceae9e2bcede1887948142304313d5cc5f23cb8bd112b
+size 586

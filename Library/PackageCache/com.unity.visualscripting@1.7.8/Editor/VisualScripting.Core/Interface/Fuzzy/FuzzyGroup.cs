@@ -1,33 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public class FuzzyGroup
-    {
-        public FuzzyGroup(string label)
-        {
-            this.label = label;
-        }
-
-        public FuzzyGroup(string label, EditorTexture icon)
-        {
-            this.label = label;
-            this.icon = icon;
-        }
-
-        public FuzzyGroup(string label, object data)
-        {
-            this.label = label;
-            this.data = data;
-        }
-
-        public FuzzyGroup(string label, EditorTexture icon, object data)
-        {
-            this.label = label;
-            this.icon = icon;
-            this.data = data;
-        }
-
-        public string label { get; set; }
-        public EditorTexture icon { get; set; }
-        public object data { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:81c7569f7003285e0afa8c108e3e3f47c2768bf287cb97adb8c27da239954ae6
+size 765

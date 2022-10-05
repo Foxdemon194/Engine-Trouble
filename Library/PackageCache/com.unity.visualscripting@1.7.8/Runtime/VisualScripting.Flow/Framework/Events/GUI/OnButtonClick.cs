@@ -1,17 +1,3 @@
-using System;
-using UnityEngine.UI;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when a user clicks the button and releases it.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [TypeIcon(typeof(Button))]
-    [UnitOrder(1)]
-    public sealed class OnButtonClick : GameObjectEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => EventHooks.OnButtonClick;
-        public override Type MessageListenerType => typeof(UnityOnButtonClickMessageListener);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b60a71b5b9e4afd13b8646bd004ef343c381bc35220ae7e64eb470cf1a3227b2
+size 510

@@ -1,16 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-namespace Timeline.Samples
-{
-    // Runtime representation of a time dilation clip.
-    // The Serializable attribute is required to be animated by timeline, and used as a template.
-    [Serializable]
-    public class TimeDilationBehaviour : PlayableBehaviour
-    {
-        [Tooltip("Time.timeScale replacement value.")]
-        public float timeScale = 1f;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b2a8cd56d16b8b7e7a2c677dd61c5f0e1bba109e8398a983417796416b12406
+size 457

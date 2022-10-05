@@ -1,33 +1,3 @@
-using UnityEngine;
-using UnityObject = UnityEngine.Object;
-
-namespace Unity.VisualScripting
-{
-    public static class UnityObjectOwnershipUtility
-    {
-        public static void CopyOwner(object source, object destination)
-        {
-            var destinationOwned = destination as IUnityObjectOwnable;
-
-            if (destinationOwned != null)
-            {
-                destinationOwned.owner = GetOwner(source);
-            }
-        }
-
-        public static void RemoveOwner(object o)
-        {
-            var sourceOwned = o as IUnityObjectOwnable;
-
-            if (sourceOwned != null)
-            {
-                sourceOwned.owner = null;
-            }
-        }
-
-        public static UnityObject GetOwner(object o)
-        {
-            return (o as Component)?.gameObject ?? (o as IUnityObjectOwnable)?.owner;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:880e53c18bdff1761a1e2823dbe8977a5acd5943653f41e10b0b169bc7dfbf04
+size 847

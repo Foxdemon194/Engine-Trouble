@@ -1,11 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called in flow graphs nested in state graphs when the parent state node is entered.
-    /// </summary>
-    [UnitCategory("Events/State")]
-    public class OnEnterState : ManualEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => StateEventHooks.OnEnterState;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:38cc40570fbd7d749ab56613e56748430baa80be85087f26421709b44d4780ac
+size 352

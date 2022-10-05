@@ -1,25 +1,3 @@
-using System;
-using UnityEditor;
-using UnityEngine;
-
-namespace Packages.Rider.Editor
-{
-#if UNITY_2020_1_OR_NEWER // API doesn't exist in 2019.4
-  [FilePath("Library/com.unity.ide.rider/PersistedState.asset", FilePathAttribute.Location.ProjectFolder)]
-#endif
-  internal class RiderScriptEditorPersistedState : ScriptableSingleton<RiderScriptEditorPersistedState>
-  {
-    [SerializeField] private long lastWriteTicks;
-
-    public DateTime? LastWrite
-    {
-      get => DateTime.FromBinary(lastWriteTicks);
-      set
-      {
-        if (!value.HasValue) return;
-        lastWriteTicks = value.Value.ToBinary();
-        Save(true);
-      }
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5dbcf413a297315d36c9c8bc78e68ad66318a0387c98cb3bed0fec138cca7db0
+size 647

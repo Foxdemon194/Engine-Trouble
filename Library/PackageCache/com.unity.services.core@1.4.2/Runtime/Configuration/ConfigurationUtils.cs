@@ -1,16 +1,3 @@
-using System.IO;
-using UnityEngine;
-
-namespace Unity.Services.Core.Configuration
-{
-    static class ConfigurationUtils
-    {
-        public const string ConfigFileName = "UnityServicesProjectConfiguration.json";
-
-        public static string RuntimeConfigFullPath { get; }
-            = Path.Combine(Application.streamingAssetsPath, ConfigFileName);
-
-        public static IConfigurationLoader ConfigurationLoader { get; internal set; }
-            = new StreamingAssetsConfigurationLoader();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5465d108c990b731381f470c9dbbe3e3e6e1330d3b1e3fa116020c88c8348818
+size 501

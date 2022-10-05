@@ -1,5 +1,3 @@
----
-title: open-inspector-window
----
-
-With the GameObject selected in the Hierarchy window, go to **Window** &gt; **General** &gt; **Inspector**, or press Ctrl+3 (macOS: Cmd+3) to open the [Inspector window](https://docs.unity3d.com/Documentation/Manual/UsingTheInspector.html).
+version https://git-lfs.github.com/spec/v1
+oid sha256:c548b577ad1a09076daa8e13794b8feae715e65237c016436dbe697bf58a570d
+size 278

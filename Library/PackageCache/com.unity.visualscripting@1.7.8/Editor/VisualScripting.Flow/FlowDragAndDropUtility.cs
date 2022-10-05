@@ -1,13 +1,3 @@
-using UnityEditor;
-
-namespace Unity.VisualScripting
-{
-    public static class FlowDragAndDropUtility
-    {
-        public static bool AcceptsScript(IGraph graph)
-        {
-            // Can't drag a graph into itself
-            return DragAndDrop.objectReferences[0] is ScriptGraphAsset graphAsset && graph != graphAsset.graph;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb90dda1e7124c4c0c844ff52e3ece58a72b94ae8d0b07ad89678b04567ccd8c
+size 348

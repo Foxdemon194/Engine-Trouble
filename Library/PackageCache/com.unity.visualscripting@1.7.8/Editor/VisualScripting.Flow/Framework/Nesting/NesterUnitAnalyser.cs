@@ -1,29 +1,3 @@
-using System.Collections.Generic;
-using UnityObject = UnityEngine.Object;
-
-namespace Unity.VisualScripting
-{
-    [Analyser(typeof(INesterUnit))]
-    public class NesterUnitAnalyser<TNesterUnit> : UnitAnalyser<TNesterUnit> where TNesterUnit : class, INesterUnit
-    {
-        public NesterUnitAnalyser(GraphReference reference, TNesterUnit unit) : base(reference, unit) { }
-
-        protected override IEnumerable<Warning> Warnings()
-        {
-            foreach (var baseWarning in base.Warnings())
-            {
-                yield return baseWarning;
-            }
-
-            if (unit.childGraph == null)
-            {
-                yield return Warning.Caution("Missing nested graph.");
-            }
-
-            if (unit.nest.hasBackgroundEmbed)
-            {
-                yield return Warning.Caution("Background embed graph detected.");
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b4d2f9d91a5dc5a62c73497cfd542199d6ced874e45b6a2cd783f5cd84b20f0
+size 886

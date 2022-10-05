@@ -1,21 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public abstract class VectorInspector : Inspector
-    {
-        protected VectorInspector(Metadata metadata) : base(metadata) { }
-
-        protected override float GetHeight(float width, GUIContent label)
-        {
-            return HeightWithLabel(metadata, width, EditorGUIUtility.singleLineHeight, label);
-        }
-
-        public static class Styles
-        {
-            public static float compactThreshold = 120;
-            public static float compactSpacing = 2;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:71125003ffcd9853cee61a9874d62f22b993714542f912575cca27674ab1bf21
+size 569

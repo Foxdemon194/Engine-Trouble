@@ -1,36 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    [InitializeAfterPlugins]
-    public static class UnitBaseStateExtensions
-    {
-        static UnitBaseStateExtensions()
-        {
-            UnitBase.staticUnitsExtensions.Add(GetStaticOptions);
-            UnitBase.dynamicUnitsExtensions.Add(GetDynamicOptions);
-            UnitBase.contextualUnitsExtensions.Add(GetContextualOptions);
-        }
-
-        private static IEnumerable<IUnitOption> GetStaticOptions()
-        {
-            yield return StateUnit.WithStart().Option();
-        }
-
-        private static IEnumerable<IUnitOption> GetDynamicOptions()
-        {
-            var stateMacros = UnityAPI.Await(() => AssetUtility.GetAllAssetsOfType<StateGraphAsset>().ToArray());
-
-            foreach (var stateUnit in stateMacros.Select(statemacro => new StateUnit(statemacro)))
-            {
-                yield return stateUnit.Option();
-            }
-        }
-
-        private static IEnumerable<IUnitOption> GetContextualOptions(GraphReference reference)
-        {
-            yield break;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:50dfc3861c2a1cbb371022a890c69ed2e4cc8f5170cb8c0f36026df01f5f44d7
+size 1114

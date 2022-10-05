@@ -1,22 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(LooseAssemblyName))]
-    public class LooseAssemblyNameOption : FuzzyOption<LooseAssemblyName>
-    {
-        public LooseAssemblyNameOption(LooseAssemblyName looseAssemblyName)
-        {
-            value = looseAssemblyName;
-            label = value.name;
-        }
-
-        public static string Haystack(LooseAssemblyName looseAssemblyName)
-        {
-            return looseAssemblyName.name;
-        }
-
-        public static string SearchResultLabel(LooseAssemblyName looseAssemblyName, string query)
-        {
-            return SearchUtility.HighlightQuery(looseAssemblyName.name, query);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e707da31d6e0b228e88ecb7bf0b94732d9e02181e19f4e2297e76fad2784a330
+size 672

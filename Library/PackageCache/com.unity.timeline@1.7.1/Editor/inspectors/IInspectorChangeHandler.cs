@@ -1,14 +1,3 @@
-namespace UnityEditor.Timeline
-{
-    /// <summary>
-    /// Implement this interface in your PlayableAsset inspector to change what happens when a UI component in the inspector is modified
-    /// </summary>
-    /// <remarks>The default PlayableAsset inspector will cause any UI change to force a PlayableGraph rebuild</remarks>
-    public interface IInspectorChangeHandler
-    {
-        /// <summary>
-        /// This method will be called when a Playable Asset inspector is modified.
-        /// </summary>
-        void OnPlayableAssetChangedInInspector();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:93443856a3eb9b7048090e80ecad637715272aa3c402cb5d448d0cb638477553
+size 566

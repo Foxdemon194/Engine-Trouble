@@ -1,23 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(GetVariable))]
-    public class GetVariableOption : UnifiedVariableUnitOption<GetVariable>
-    {
-        [Obsolete(Serialization.ConstructorWarning)]
-        public GetVariableOption() : base() { }
-
-        public GetVariableOption(VariableKind kind, string defaultName = null) : base(kind, defaultName) { }
-
-        protected override string NamedLabel(bool human)
-        {
-            return $"Get {name}";
-        }
-
-        protected override string UnnamedLabel(bool human)
-        {
-            return $"Get {kind} Variable";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a281a0f918b99ed30b963ce5623f4997f075266d6770f2949eff880c373fc32
+size 624

@@ -1,24 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the maximum between two or more scalars.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Maximum")]
-    public sealed class ScalarMaximum : Maximum<float>
-    {
-        public override float Operation(float a, float b)
-        {
-            return Mathf.Max(a, b);
-        }
-
-        public override float Operation(IEnumerable<float> values)
-        {
-            return values.Max();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7cb9a2aabbee2bb3d08d8f76e8f8466779468ec3115c19b443579b5b9d14bc7b
+size 566

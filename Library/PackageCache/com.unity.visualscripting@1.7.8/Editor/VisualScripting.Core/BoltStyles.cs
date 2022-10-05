@@ -1,24 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public static class BoltStyles
-    {
-        static BoltStyles()
-        {
-            // Variables
-
-            variableFieldDirectionIndicator = "AC LeftArrow";
-            variableFieldWithoutDirectionIndicator = new GUIStyle(EditorStyles.textField);
-            variableFieldWithoutDirectionIndicator.padding.left = IconSize.Small;
-            variableFieldWithDirectionIndicator = new GUIStyle(variableFieldWithoutDirectionIndicator);
-            variableFieldWithDirectionIndicator.padding.left = 24;
-        }
-
-        // Variables
-        public static readonly GUIStyle variableFieldDirectionIndicator;
-        public static readonly GUIStyle variableFieldWithDirectionIndicator;
-        public static readonly GUIStyle variableFieldWithoutDirectionIndicator;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:01da46348980d111b40bdc672237da6fcf52fece5c9c950c4ea904568e509f7e
+size 854

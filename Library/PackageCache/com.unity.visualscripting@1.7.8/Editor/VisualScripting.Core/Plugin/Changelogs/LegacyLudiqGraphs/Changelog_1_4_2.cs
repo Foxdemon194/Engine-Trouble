@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqGraphsChangelog_1_4_2 : PluginChangelog
-    {
-        public LudiqGraphsChangelog_1_4_2(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.2";
-
-        public override DateTime date => new DateTime(2019, 04, 03);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Wrong window focusing when clicking Edit Graph and multiple graph windows are open";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:328c81329fcd9bbd3c1b631aa44666ff792fdf8fb92e91805cbeac7ceffe89ff
+size 634

@@ -1,21 +1,3 @@
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-namespace Timeline.Samples
-{
-    // A track that allows the user to do simple transform movements.
-    // It demonstrates how to define a custom track mixer in order to support blending of clips.
-    [TrackColor(1.0f, 0.0f, 0.0f)]
-    [TrackBindingType(typeof(Transform))]
-    [TrackClipType(typeof(TweenClip))]
-    public class TweenTrack : TrackAsset
-    {
-        // Creates a runtime instance of the track, represented by a PlayableBehaviour.
-        // The runtime instance performs mixing on the clips.
-        public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
-        {
-            return ScriptPlayable<TweenMixerBehaviour>.Create(graph, inputCount);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c1d7be6768d0bffa61cc2c96c90e711cbe4c46474be42a62e4876cf2cf2ae53d
+size 798

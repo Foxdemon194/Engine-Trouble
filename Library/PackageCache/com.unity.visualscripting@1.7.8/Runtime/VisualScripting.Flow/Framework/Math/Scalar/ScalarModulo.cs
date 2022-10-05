@@ -1,19 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the remainder of the division of two scalars.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Modulo")]
-    public sealed class ScalarModulo : Modulo<float>
-    {
-        protected override float defaultDividend => 1;
-
-        protected override float defaultDivisor => 1;
-
-        public override float Operation(float a, float b)
-        {
-            return a % b;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:491375dff10a1dd0fc765e6c6067a394f755919d2680346a95466f5656203530
+size 475

@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Checks if a saved variable is defined.
-    /// </summary>
-    [UnitSurtitle("Save")]
-    public sealed class IsSavedVariableDefined : IsVariableDefinedUnit, ISavedVariableUnit
-    {
-        public IsSavedVariableDefined() : base() { }
-
-        public IsSavedVariableDefined(string defaultName) : base(defaultName) { }
-
-        protected override VariableDeclarations GetDeclarations(Flow flow)
-        {
-            return Variables.Saved;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b148c76b9e3a18de3b701e717092354054b15baa17baa3d2a545b4995907016
+size 518

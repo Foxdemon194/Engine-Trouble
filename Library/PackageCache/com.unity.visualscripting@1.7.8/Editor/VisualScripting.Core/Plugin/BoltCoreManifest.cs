@@ -1,13 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    public sealed class BoltCoreManifest : PluginManifest
-    {
-        private BoltCoreManifest(BoltCore plugin) : base(plugin) { }
-
-        public override string name => "Visual Scripting Core";
-        public override string author => "";
-        public override string description => "";
-        public override SemanticVersion version => PackageVersionUtility.version;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a274edc1d4a0db2c037baf53d33887845a1752917747006c486751659cda5fcc
+size 443

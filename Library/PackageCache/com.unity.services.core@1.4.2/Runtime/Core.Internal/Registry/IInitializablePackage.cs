@@ -1,25 +1,3 @@
-using System.Threading.Tasks;
-
-namespace Unity.Services.Core.Internal
-{
-    /// <summary>
-    /// Contract for objects able to register a set of <see cref="IServiceComponent"/>
-    /// to a given <see cref="CoreRegistry"/>.
-    /// </summary>
-    public interface IInitializablePackage
-    {
-        /// <summary>
-        /// Start the process of registering all <see cref="IServiceComponent"/>
-        /// provided by this package to the given <paramref name="registry"/>.
-        /// </summary>
-        /// <param name="registry">
-        /// The <see cref="IServiceComponent"/> container to use.
-        /// It provides the available <see cref="IServiceComponent"/> and this package
-        /// will register the provided <see cref="IServiceComponent"/> to it.
-        /// </param>
-        /// <returns>
-        /// Return a handle to the asynchronous initialization process.
-        /// </returns>
-        Task Initialize(CoreRegistry registry);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:94851fb3a4a8ee43839bb9bbf3de39478fb5d86e4b47f66fbb47daf29cb73bf6
+size 958

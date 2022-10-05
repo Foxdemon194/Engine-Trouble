@@ -1,36 +1,3 @@
-using System;
-using UnityEngine.UI;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the text content of the input field has changed.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [TypeIcon(typeof(InputField))]
-    [UnitOrder(2)]
-    public sealed class OnInputFieldValueChanged : GameObjectEventUnit<string>
-    {
-        public override Type MessageListenerType => typeof(UnityOnInputFieldValueChangedMessageListener);
-        protected override string hookName => EventHooks.OnInputFieldValueChanged;
-
-        /// <summary>
-        /// The new text content of the input field.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ValueOutput value { get; private set; }
-
-        protected override void Definition()
-        {
-            base.Definition();
-
-            value = ValueOutput<string>(nameof(value));
-        }
-
-        protected override void AssignArguments(Flow flow, string value)
-        {
-            flow.SetValue(this.value, value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:de8c3dca52652dfb2bb7ebd1e6a1e6b98c8136cf2d9b3ee36ab3d2e493e9e571
+size 1045

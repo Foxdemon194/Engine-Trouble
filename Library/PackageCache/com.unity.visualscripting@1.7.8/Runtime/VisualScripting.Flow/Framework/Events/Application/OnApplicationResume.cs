@@ -1,11 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the application resumes.
-    /// </summary>
-    [UnitCategory("Events/Application")]
-    public sealed class OnApplicationResume : GlobalEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => EventHooks.OnApplicationResume;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c314e1cbd94ab9192d686849bb551b829c9378c4d37665846752cf260d8229a4
+size 327

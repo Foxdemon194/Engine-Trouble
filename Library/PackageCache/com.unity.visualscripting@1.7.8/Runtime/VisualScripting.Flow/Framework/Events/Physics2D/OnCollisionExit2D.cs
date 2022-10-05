@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_2D_EXISTS
-    /// <summary>
-    /// Called when a collider on another object stops touching this object's collider.
-    /// </summary>
-    public sealed class OnCollisionExit2D : CollisionEvent2DUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnCollisionExit2DMessageListener);
-        protected override string hookName => EventHooks.OnCollisionExit2D;
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe930a7088c1803d992219e4eebf7b2c876182fe8fcfef63ad710992b7261271
+size 464

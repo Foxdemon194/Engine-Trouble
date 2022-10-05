@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the product of two objects.
-    /// </summary>
-    [UnitCategory("Math/Generic")]
-    [UnitTitle("Multiply")]
-    public sealed class GenericMultiply : Multiply<object>
-    {
-        public override object Operation(object a, object b)
-        {
-            return OperatorUtility.Multiply(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc063127a628995dc7ecd7db1fc882b775aaae07442d263f7ed2fbecba689fd7
+size 383
